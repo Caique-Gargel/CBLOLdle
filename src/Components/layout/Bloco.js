@@ -6,6 +6,7 @@ function Bloco({texto,titulo})
         <div className={styles.bloco}>
             <h1>{titulo}</h1>
             <p>{texto}</p>
+          
         </div>
         
     );
