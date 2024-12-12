@@ -4,7 +4,7 @@ function Bloco({texto,titulo})
 {
     return(
         <div className={styles.bloco}>
-            <h1>{titulo}</h1>
+            <h2>{titulo}</h2><br/>
             <p>{texto}</p>
           
         </div>

@@ -1,0 +1,22 @@
+.tutorial{
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+.icon{
+    font-size: 25px;
+    padding-top: 10px;
+    
+}
+.btn{
+    padding: 1% 5%;
+    background-color: #1E2328;
+    font-size: 20px;
+    border-radius: 80px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid white;
+    cursor: pointer;
+}
