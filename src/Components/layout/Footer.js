@@ -1,21 +1,14 @@
-import {FaFacebook,FaInstagram, FaLinkedin} from 'react-icons/fa'
-import styles from './Footer.module.css'
-function Footer(){
+import styles from '../layout/Footer.module.css'
+import {FaGithub,FaLinkedin} from 'react-icons/fa'
+function Footer()
+{
     return(
         <footer className={styles.footer}>
             <ul className={styles.social_list}>
-                <li>
-                    <FaFacebook/>
-                </li>
-                <li>
-                    <FaInstagram/>
-                </li>
-                <li>
-                    <FaLinkedin/>
-                </li>
+                <li><a href="https://github.com/Caique-Gargel"><FaGithub/></a></li>
+                <li><a href="https://www.linkedin.com/in/caique-cesar-gargel-de-oliveira-615511220"><FaLinkedin/></a></li>
                 
             </ul>
-
         </footer>
     )
 }
