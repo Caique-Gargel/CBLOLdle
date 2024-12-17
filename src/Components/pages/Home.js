@@ -2,7 +2,7 @@ import styles from "./Home.module.css"
 import logo from "../../5.png"
 import Bloco from "../layout/Bloco";
 import Tutorial from "../layout/Tutorial";
-import Form from "../layout/Form";
+import Form from "../Forms/Form"
 function Home(){
     return(
         <div className={styles.home}>
