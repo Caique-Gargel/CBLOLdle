@@ -13,7 +13,7 @@ function Tutorial()
         <div className={styles.tutorial} > 
             <button onClick={()=>setOpen(true)} className={styles.btn}>Como Jogar</button>
             
-            <Modal isOpen={open}/>
+            <Modal isOpen={open} setOpen={setOpen}/>
         </div>
     )
 }

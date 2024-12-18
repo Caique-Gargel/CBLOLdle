@@ -1,12 +1,13 @@
 .background{
-   
-}
-.modal{
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    
+}
+.modal{
+    
     background-color: #1E2328;
     margin: 4% auto;
     width: 60%;
