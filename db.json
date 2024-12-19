@@ -1,0 +1,563 @@
+{
+    "players":[
+        {
+            "id":1,
+            "name":"Guigo",
+            "Org":"Vivo Keyd",
+            "Titulos": 2,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":22
+            
+        },
+        {
+            "id":2,
+            "name":"Disamis",
+            "Org":"Vivo Keyd",
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+            
+            
+        },
+
+        {
+            "id":3,
+            "name":"Leleko",
+            "Org":"Vivo Keyd",
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":0
+        },
+        {
+            "id":4,
+            "name":"Smiley",
+            "Org":"Vivo Keyd",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+
+        {
+            "id":5,
+            "name":"Prodelta",
+            "Org":"Vivo Keyd",
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23
+        },
+        {
+            "id":6,
+            "name":"Wizer",
+            "Org":"Pain",
+            "Titulos": 1,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":7,
+            "name":"CarioK",
+            "Org":"Pain",
+            "Titulos": 2,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":8,
+            "name":"DyNquedo",
+            "Org":"Pain",
+            "Titulos": 3,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":27
+        },
+        {
+            "id":9,
+            "name":"TitaN",
+            "Org":"Pain",
+            "Titulos": 5,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":10,
+            "name":"Kuri",
+            "Org":"Pain",
+            "Titulos": 1,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":11,
+            "name":"fNb",
+            "Org":"RED Canids",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":12,
+            "name":"Aegis",
+            "Org":"RED Canids",
+            "Titulos": 2,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":25
+        },
+        {
+            "id":13,
+            "name":"Grevthar",
+            "Org":"RED Canids",
+            "Titulos": 2,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":25
+        },
+        {
+            "id":14,
+            "name":"Brance",
+            "Org":"RED Canids",
+            "Titulos": 1,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":20
+        },
+        {
+            "id":15,
+            "name":"frosty",
+            "Org":"RED Canids",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":20
+        },
+        {
+            "id":16,
+            "name":"Robo",
+            "Org":"LOUD",
+            "Titulos": 7,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":17,
+            "name":"Croc",
+            "Org":"LOUD",
+            "Titulos": 4,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":18,
+            "name":"Tinows",
+            "Org":"LOUD",
+            "Titulos": 5,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":27
+        },
+        {
+            "id":19,
+            "name":"Route",
+            "Org":"LOUD",
+            "Titulos": 3,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":25
+        },
+        {
+            "id":20,
+            "name":"RedBert",
+            "Org":"LOUD",
+            "Titulos": 4,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":21,
+            "name":"Zzk",
+            "Org":"FURIA",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23
+        },
+        {
+            "id":22,
+            "name":"Wiz",
+            "Org":"FURIA",
+            "Titulos": 1,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":23,
+            "name":"Tutsz",
+            "Org":"FURIA",
+            "Titulos": 1,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":22
+        },
+        {
+            "id":24,
+            "name":"Ayu",
+            "Org":"FURIA",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":19
+        },
+        {
+            "id":25,
+            "name":"JoJo",
+            "Org":"FURIA",
+            "Titulos": 2,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":26,
+            "name":"Kiari",
+            "Org":"Fluxo",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":25
+        },
+        {
+            "id":27,
+            "name":"Shini",
+            "Org":"Fluxo",
+            "Titulos": 2,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":27
+        },
+        {
+            "id":28,
+            "name":"Fuu",
+            "Org":"Fluxo",
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        },
+        {
+            "id":29,
+            "name":"Trigo",
+            "Org":"Fluxo",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":25
+        },
+        {
+            "id":30,
+            "name":"Scamber",
+            "Org":"Fluxo",
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":31,
+            "name":"Lonely",
+            "Org":"Kabum",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":32,
+            "name":"Scary",
+            "Org":"Kabum",
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":0
+        },
+        
+        {
+            "id":33,
+            "name":"Hauz",
+            "Org":"Kabum",
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23
+        },
+        {
+            "id":34,
+            "name":"Netuno",
+            "Org":"Kabum",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        },
+        {
+            "id":35,
+            "name":"Ceos",
+            "Org":"Kabum",
+            "Titulos": 3,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":36,
+            "name":"Yups",
+            "Org":"INTZ",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        },
+        {
+            "id":37,
+            "name":"Yampi",
+            "Org":"INTZ",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":38,
+            "name":"Dioge",
+            "Org":"INTZ",
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":22
+        },
+        {
+            "id":39,
+            "name":"NinjaKiwi",
+            "Org":"INTZ",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        },
+        {
+            "id":40,
+            "name":"Damage",
+            "Org":"INTZ",
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":27
+        },
+        {
+            "id":41,
+            "name":"Makes",
+            "Org":"Liberty",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":0
+        },
+        {
+            "id":42,
+            "name":"Drakehero",
+            "Org":"Liberty",
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        },
+        {
+            "id":43,
+            "name":"Pilot",
+            "Org":"Liberty",
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":25
+        },
+        {
+            "id":44,
+            "name":"micaO",
+            "Org":"Liberty",
+            "Titulos": 4,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":28
+        },
+        {
+            "id":45,
+            "name":"Cavalo",
+            "Org":"Liberty",
+            "Titulos": 4,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23
+        },
+        {
+            "id":46,
+            "name":"SuperCleber",
+            "Org":"LOS",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        },
+        {
+            "id":47,
+            "name":"Seize",
+            "Org":"LOS",
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":48,
+            "name":"Envy",
+            "Org":"LOS",
+            "Titulos": 2,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":26
+        },
+        {
+            "id":49,
+            "name":"brTT",
+            "Org":"LOS",
+            "Titulos": 6,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":33
+        },
+        {
+            "id":50,
+            "name":"Kabbie",
+            "Org":"LOS",
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23
+        },
+        {
+            "id":51,
+            "name":"Malrang",
+            "Org":"Kabum",
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24
+        },
+        {
+            "id":52,
+            "name":"Betão",
+            "Org":"Kabum",
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23
+        },
+        {
+            "id":53,
+            "name":"Leandrinn",
+            "Org":"Liberty",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":20
+        },
+        {
+            "id":54,
+            "name":"Levizin",
+            "Org":"Liberty",
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21
+        }
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+    ]
+}
