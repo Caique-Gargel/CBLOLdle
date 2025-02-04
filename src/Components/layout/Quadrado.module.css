@@ -1,0 +1,43 @@
+.quadrado{
+    margin:1em 0.5em 0 0.5em ;
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3.5px;
+    font-size: 16px;
+}
+.container{
+    margin-top: 1em;
+}
+.container p{
+    font-weight: bold;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    font-size: 18px;
+    margin:0em 0.5em 0 0.5em ;
+}
+.errado{
+    background-color: red;
+}
+.certo{
+    background-color: #10c239;
+}
+.parcial{
+    background-color: #d49e15;
+}
+.upper{
+    background-image: url(../../Upper.png);
+    background-color: red;
+}
+.lower{
+    background-image: url(../../Lower.png);
+    background-color: red;
+}
+.container hr{
+    font-size: 14px;
+    margin:0em 0.5em 0 0.5em ;
+    border: 1px solid white;
+}
