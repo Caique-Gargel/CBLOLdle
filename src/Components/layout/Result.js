@@ -3,12 +3,21 @@ import Quadrado from "./Quadrado"
 
 function Result({res,diario})
 {
-    var classTime, classTitulo, classPosition,classIdade,classSituacao;
+    
+    
+    var classTime, classTitulo, classPosition,classIdade,classSituacao,classNacionalidade;
     //-----------------------------------------------------------
-    if(res.Org===diario.Org)
+    if(res.Org[0]===diario.Org[0])
         classTime="certo"
     else
-        classTime="errado"        
+    {
+        classTime="errado" 
+        for (var i = 0; i < diario.Org.length; i++) {
+           if(res.Org[0]===diario.Org[i])
+                classTime="parcial"
+        }
+    }
+               
     
     //-----------------------------------------------------------
 
@@ -43,16 +52,23 @@ function Result({res,diario})
         else
             classTitulo="upper"
     }
+     //-----------------------------------------------------------
+
+     if(res.nacionalidade===diario.nacionalidade)
+        classNacionalidade="certo"
+    else
+        classNacionalidade="errado"
         
      //-----------------------------------------------------------
     return(
         <div className={styles.ContainerRes}>
             <Quadrado text={res.name} categorie="Jogador" />
-            <Quadrado text={res.Org} categorie="Time" customClass={classTime}/>
+            <Quadrado text={res.Org[0]} categorie="Time" customClass={classTime}/>
             <Quadrado text={res.Titulos} categorie="Títulos" customClass={classTitulo}/>
             <Quadrado text={res.Position} categorie="Posição" customClass={classPosition}/>
             <Quadrado text={res.idade} categorie="Idade" customClass={classIdade}/>
             <Quadrado text={res.Current} categorie="Situação"  customClass={classSituacao}/>
+            <Quadrado text={res.nacionalidade} categorie="Origem"  customClass={classNacionalidade}/>
             
 
         </div>

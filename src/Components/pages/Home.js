@@ -37,7 +37,7 @@ function Home(){
         if(players.length>0)
         {
             setplayerDoDia(players[generateidPerDate()]);
-            if(localStorage.getItem("date")==hoje)
+            if(localStorage.getItem("date")!=hoje)
                 localStorage.clear()
             else    
                 setListResposta(JSON.parse(localStorage.getItem("listRes")))
@@ -59,7 +59,7 @@ function Home(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 45) + 1;
+        const id = Math.floor(randomValue * 74) + 1;
     
         return id;
     }

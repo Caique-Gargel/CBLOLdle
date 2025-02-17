@@ -1,551 +1,831 @@
 {
     "players":[
+        
         {
             "id":1,
-            "name":"Guigo",
-            "Org":"Vivo Keyd",
-            "Titulos": 2,
+            "name":"Boal",
+            "Org":["Vivo Keyd","RED Canids","Flamengo"],
+            "Titulos": 0,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":22
+            "idade":22,
+            "nacionalidade":"Brasil"
             
         },
         {
             "id":2,
             "name":"Disamis",
-            "Org":"Vivo Keyd",
+            "Org":["Vivo Keyd","FLUXO","Liberty"],
             "Titulos": 0,
             "Position":"JUNGLE",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":21,
+            "nacionalidade":"Brasil"
             
             
         },
 
         {
             "id":3,
-            "name":"Leleko",
-            "Org":"Vivo Keyd",
+            "name":"Kisee",
+            "Org":["Vivo Keyd"],
             "Titulos": 0,
             "Position":"MID",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":0
+            "idade":21,
+            "nacionalidade":"Australia"
         },
         {
             "id":4,
-            "name":"Smiley",
-            "Org":"Vivo Keyd",
+            "name":"Morttheus",
+            "Org":["Vivo Keyd"],
             "Titulos": 0,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":22,
+            "nacionalidade":"Brasil"
         },
 
         {
             "id":5,
-            "name":"Prodelta",
-            "Org":"Vivo Keyd",
+            "name":"Trymbi",
+            "Org":["Vivo Keyd"],
             "Titulos": 0,
             "Position":"SUP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":23
+            "idade":24,
+            "nacionalidade":"Polonia"
         },
         {
             "id":6,
             "name":"Wizer",
-            "Org":"Pain",
+            "Org":["Pain","Kabum"],
             "Titulos": 1,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":26,
+            "nacionalidade":"Coreia"
         },
         {
             "id":7,
             "name":"CarioK",
-            "Org":"Pain",
+            "Org":["Pain"],
             "Titulos": 2,
             "Position":"JUNGLE",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":25,
+            "nacionalidade":"Brasil"
         },
         {
             "id":8,
             "name":"DyNquedo",
-            "Org":"Pain",
+            "Org":["Pain","LOUD","Prodigy Esports","Liberty","Kabum"],
             "Titulos": 3,
             "Position":"MID",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":27
+            "idade":27,
+            "nacionalidade":"Brasil"
         },
         {
             "id":9,
             "name":"TitaN",
-            "Org":"Pain",
+            "Org":["Pain","Red Canids","Kabum"],
             "Titulos": 5,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":24,
+            "nacionalidade":"Brasil"
         },
         {
             "id":10,
             "name":"Kuri",
-            "Org":"Pain",
+            "Org":["Pain"],
             "Titulos": 1,
             "Position":"SUP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":24,
+            "nacionalidade":"Coreia"
         },
         {
             "id":11,
             "name":"fNb",
-            "Org":"RED Canids",
+            "Org":["Red Canids","FURIA","Vorax","Prodigy Esports","ProGaming"],
             "Titulos": 0,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":25,
+            "nacionalidade":"Brasil"
         },
         {
             "id":12,
             "name":"Aegis",
-            "Org":"RED Canids",
+            "Org":["Red Canids"],
             "Titulos": 2,
             "Position":"JUNGLE",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":25
+            "idade":25,
+            "nacionalidade":"Brasil"
         },
         {
             "id":13,
             "name":"Grevthar",
-            "Org":"RED Canids",
+            "Org":["Red Canids","Vivo Keyd"],
             "Titulos": 2,
             "Position":"MID",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":25
+            "idade":25,
+            "nacionalidade":"Brasil"
         },
         {
             "id":14,
             "name":"Brance",
-            "Org":"RED Canids",
+            "Org":["Red Canids","FLUXO","LOUD"],
             "Titulos": 1,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":20
+            "idade":20,
+            "nacionalidade":"Brasil"
         },
         {
             "id":15,
             "name":"frosty",
-            "Org":"RED Canids",
+            "Org":["Red Canids"],
             "Titulos": 0,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":20
+            "idade":20,
+            "nacionalidade":"Brasil"
         },
         {
             "id":16,
             "name":"Robo",
-            "Org":"LOUD",
+            "Org":["LOUD", "Pain","Vivo Keyd","Flamengo","CNB","RED Canids","INTZ"],
             "Titulos": 7,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":26,
+            "nacionalidade":"Brasil"
         },
         {
             "id":17,
-            "name":"Croc",
-            "Org":"LOUD",
-            "Titulos": 4,
+            "name":"Wiz",
+            "Org":["LOUD","FURIA","Kabum"],
+            "Titulos": 1,
             "Position":"JUNGLE",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":26,
+            "nacionalidade":"Coreia"
         },
         {
             "id":18,
             "name":"Tinows",
-            "Org":"LOUD",
+            "Org":["LOUD","Pain","CNB","Kabum"],
             "Titulos": 5,
             "Position":"MID",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":27
+            "idade":27,
+            "nacionalidade":"Brasil"
         },
         {
             "id":19,
             "name":"Route",
-            "Org":"LOUD",
+            "Org":["LOUD"],
             "Titulos": 3,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":25
+            "idade":25,
+            "nacionalidade":"Coreia"
         },
         {
             "id":20,
-            "name":"RedBert",
-            "Org":"LOUD",
-            "Titulos": 4,
+            "name":"Winsome",
+            "Org":["LOUD"],
+            "Titulos": 0,
             "Position":"SUP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":24,
+            "nacionalidade":"United States"
         },
         {
             "id":21,
-            "name":"Zzk",
-            "Org":"FURIA",
-            "Titulos": 0,
+            "name":"Guigo",
+            "Org":["FURIA","Vivo Keyd","RED Canids"],
+            "Titulos": 2,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":23
+            "idade":23,
+            "nacionalidade":"Brasil"
+            
         },
         {
             "id":22,
-            "name":"Wiz",
-            "Org":"FURIA",
-            "Titulos": 1,
+            "name":"Tatu",
+            "Org":["FURIA"],
+            "Titulos": 0,
             "Position":"JUNGLE",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":18,
+            "nacionalidade":"Brasil"
         },
         {
             "id":23,
             "name":"Tutsz",
-            "Org":"FURIA",
+            "Org":["FURIA"],
             "Titulos": 1,
             "Position":"MID",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":22
+            "idade":22,
+            "nacionalidade":"Brasil"
         },
         {
             "id":24,
             "name":"Ayu",
-            "Org":"FURIA",
+            "Org":["FURIA"],
             "Titulos": 0,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":19
+            "idade":19,
+            "nacionalidade":"Brasil"
         },
         {
             "id":25,
             "name":"JoJo",
-            "Org":"FURIA",
+            "Org":["FURIA"],
             "Titulos": 2,
             "Position":"SUP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":26,
+            "nacionalidade":"Brasil"
         },
         {
             "id":26,
-            "name":"Kiari",
-            "Org":"Fluxo",
+            "name":"Hidan",
+            "Org":["FLUXO","LOS","INTZ","Vivo Keyd"],
             "Titulos": 0,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":25
+            "idade":22,
+            "nacionalidade":"Brasil"
         },
         {
             "id":27,
-            "name":"Shini",
-            "Org":"Fluxo",
+            "name":"Drakehero",
+            "Org":["FLUXO","Liberty"],
             "Titulos": 2,
             "Position":"JUNGLE",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":27
+            "idade":21,
+            "nacionalidade":"Brasil"
         },
         {
             "id":28,
             "name":"Fuu",
-            "Org":"Fluxo",
+            "Org":["FLUXO"],
             "Titulos": 0,
             "Position":"MID",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":21,
+            "nacionalidade":"Brasil"
         },
         {
             "id":29,
-            "name":"Trigo",
-            "Org":"Fluxo",
+            "name":"Marvin",
+            "Org":["FLUXO"],
             "Titulos": 0,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":25
+            "idade":19,
+            "nacionalidade":"Brasil"
         },
         {
             "id":30,
-            "name":"Scamber",
-            "Org":"Fluxo",
+            "name":"Guigs",
+            "Org":["FLUXO"],
             "Titulos": 0,
             "Position":"SUP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":25,
+            "nacionalidade":"Brasil"
         },
         {
             "id":31,
             "name":"Lonely",
-            "Org":"Kabum",
+            "Org":["Kabum"],
             "Titulos": 0,
             "Position":"TOP",
-            "Current":"ATUANDO",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":24,
+            "nacionalidade":"Coreia"
         },
-        {
-            "id":32,
-            "name":"Scary",
-            "Org":"Kabum",
-            "Titulos": 0,
-            "Position":"JUNGLE",
-            "Current":"ATUANDO",
-            "img":"--",
-            "idade":0
-        },
+
         
         {
-            "id":33,
+            "id":32,
             "name":"Hauz",
-            "Org":"Kabum",
+            "Org":["Kabum","FLUXO","INTZ","Rensga"],
             "Titulos": 0,
             "Position":"MID",
-            "Current":"ATUANDO",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":23
+            "idade":23,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":33,
+            "name":"Netuno",
+            "Org":["Kabum","LOS","FURIA","Flamengo"],
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":21,
+            "nacionalidade":"Brasil"
         },
         {
             "id":34,
-            "name":"Netuno",
-            "Org":"Kabum",
-            "Titulos": 0,
-            "Position":"ADC",
-            "Current":"ATUANDO",
+            "name":"Ceos",
+            "Org":["Kabum","LOUD","Redemption","Tshow"],
+            "Titulos": 3,
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":26,
+            "nacionalidade":"Brasil"
         },
         {
             "id":35,
-            "name":"Ceos",
-            "Org":"Kabum",
-            "Titulos": 3,
-            "Position":"SUP",
-            "Current":"ATUANDO",
+            "name":"Yups",
+            "Org":["INTZ"],
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":22,
+            "nacionalidade":"Brasil"
         },
         {
             "id":36,
-            "name":"Yups",
-            "Org":"INTZ",
+            "name":"Yampi",
+            "Org":["INTZ","Vorax","Prodigy Esports","ProGaming","CNB"],
             "Titulos": 0,
             "Position":"TOP",
-            "Current":"ATUANDO",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":26,
+            "nacionalidade":"Brasil"
         },
         {
             "id":37,
-            "name":"Yampi",
-            "Org":"INTZ",
+            "name":"Dioge",
+            "Org":["INTZ"],
             "Titulos": 0,
-            "Position":"TOP",
-            "Current":"ATUANDO",
+            "Position":"MID",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":22,
+            "nacionalidade":"Brasil"
         },
         {
             "id":38,
-            "name":"Dioge",
-            "Org":"INTZ",
+            "name":"NinjaKiwi",
+            "Org":["INTZ","Rensga"],
             "Titulos": 0,
-            "Position":"MID",
-            "Current":"ATUANDO",
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":22
+            "idade":21,
+            "nacionalidade":"Brasil"
         },
         {
             "id":39,
-            "name":"NinjaKiwi",
-            "Org":"INTZ",
+            "name":"Damage",
+            "Org":["INTZ","Vivo Keyd","Pain","Rensga","FURIA","Uppercut"],
             "Titulos": 0,
-            "Position":"ADC",
-            "Current":"ATUANDO",
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":27,
+            "nacionalidade":"Brasil"
         },
         {
             "id":40,
-            "name":"Damage",
-            "Org":"INTZ",
-            "Titulos": 0,
-            "Position":"SUP",
-            "Current":"ATUANDO",
-            "img":"--",
-            "idade":27
-        },
-        {
-            "id":41,
             "name":"Makes",
-            "Org":"Liberty",
+            "Org":["Liberty"],
             "Titulos": 0,
             "Position":"TOP",
-            "Current":"ATUANDO",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":0
+            "idade":0,
+            "nacionalidade":"Brasil"
         },
+       
         {
             "id":42,
-            "name":"Drakehero",
-            "Org":"Liberty",
+            "name":"Pilot",
+            "Org":["Liberty"],
             "Titulos": 0,
-            "Position":"JUNGLE",
-            "Current":"ATUANDO",
+            "Position":"MID",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":25,
+            "nacionalidade":"Brasil"
         },
         {
             "id":43,
-            "name":"Pilot",
-            "Org":"Liberty",
-            "Titulos": 0,
-            "Position":"MID",
-            "Current":"ATUANDO",
+            "name":"micaO",
+            "Org":["Liberty","Vivo Keyd","INTZ"],
+            "Titulos": 4,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":25
+            "idade":28,
+            "nacionalidade":"Brasil"
         },
         {
             "id":44,
-            "name":"micaO",
-            "Org":"Liberty",
+            "name":"Cavalo",
+            "Org":["Liberty"],
             "Titulos": 4,
-            "Position":"ADC",
-            "Current":"ATUANDO",
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":28
+            "idade":23,
+            "nacionalidade":"Brasil"
         },
         {
             "id":45,
-            "name":"Cavalo",
-            "Org":"Liberty",
-            "Titulos": 4,
-            "Position":"SUP",
-            "Current":"ATUANDO",
+            "name":"SuperCleber",
+            "Org":["LOS"],
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":23
+            "idade":21,
+            "nacionalidade":"Brasil"
         },
         {
             "id":46,
-            "name":"SuperCleber",
-            "Org":"LOS",
+            "name":"Seize",
+            "Org":["LOS"],
             "Titulos": 0,
-            "Position":"TOP",
-            "Current":"ATUANDO",
+            "Position":"JUNGLE",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":24,
+            "nacionalidade":"Coreia"
         },
         {
             "id":47,
-            "name":"Seize",
-            "Org":"LOS",
-            "Titulos": 0,
-            "Position":"JUNGLE",
-            "Current":"ATUANDO",
+            "name":"Envy",
+            "Org":["LOS","Red Canids","FURIA","INTZ"],
+            "Titulos": 2,
+            "Position":"MID",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":26,
+            "nacionalidade":"Brasil"
         },
         {
             "id":48,
-            "name":"Envy",
-            "Org":"LOS",
-            "Titulos": 2,
+            "name":"brTT",
+            "Org":["LOS","Pain","Flamengo","Red Canids","Vivo Keyd"],
+            "Titulos": 6,
             "Position":"MID",
-            "Current":"ATUANDO",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":26
+            "idade":33,
+            "nacionalidade":"Brasil"
         },
         {
             "id":49,
-            "name":"brTT",
-            "Org":"LOS",
-            "Titulos": 6,
+            "name":"Kabbie",
+            "Org":["LOS"],
+            "Titulos": 0,
             "Position":"MID",
-            "Current":"ATUANDO",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":33
+            "idade":23,
+            "nacionalidade":"Coreia"
         },
         {
             "id":50,
-            "name":"Kabbie",
-            "Org":"LOS",
+            "name":"Malrang",
+            "Org":["Kabum"],
             "Titulos": 0,
-            "Position":"MID",
-            "Current":"ATUANDO",
+            "Position":"JUNGLE",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":23
+            "idade":24,
+            "nacionalidade":"Coreia"
         },
         {
             "id":51,
-            "name":"Malrang",
-            "Org":"Kabum",
+            "name":"Betão",
+            "Org":["Kabum"],
             "Titulos": 0,
-            "Position":"JUNGLE",
-            "Current":"ATUANDO",
+            "Position":"TOP",
+            "Current":"NÃO ATUANDO",
             "img":"--",
-            "idade":24
+            "idade":23,
+            "nacionalidade":"Brasil"
         },
         {
             "id":52,
-            "name":"Betão",
-            "Org":"Kabum",
+            "name":"Leandrinn",
+            "Org":["Liberty"],
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":20,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":53,
+            "name":"Levizin",
+            "Org":["Liberty"],
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":21,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":54,
+            "name":"Zothve",
+            "Org":["Leviatan"],
             "Titulos": 0,
             "Position":"TOP",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":23
+            "idade":21,
+            "nacionalidade":"Chile"
         },
         {
-            "id":53,
-            "name":"Leandrinn",
-            "Org":"Liberty",
+            "id":55,
+            "name":"Scary",
+            "Org":["Leviatan"],
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21,
+            "nacionalidade":"Brasil"
+        },
+      
+        {
+            "id":56,
+            "name":"cody",
+            "Org":["Leviatan"],
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23,
+            "nacionalidade":"Chile"
+        },
+      
+        {
+            "id":57,
+            "name":"ceo",
+            "Org":["Leviatan"],
             "Titulos": 0,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":20
+            "idade":21,
+            "nacionalidade":"Argentina"
         },
         {
-            "id":54,
-            "name":"Levizin",
-            "Org":"Liberty",
+            "id":58,
+            "name":"ProDelta",
+            "Org":["Leviatan"],
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23,
+            "nacionalidade":"Brasil"
+        },
+
+        {
+            "id":59,
+            "name":"Burdol",
+            "Org":["Isurus Estral"],
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":21,
+            "nacionalidade":"Coreia"
+        },
+        {
+            "id":60,
+            "name":"Josedeodo",
+            "Org":["Isurus Estral"],
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":24,
+            "nacionalidade":"Argentina"
+        },
+      
+        {
+            "id":61,
+            "name":"Mireu",
+            "Org":["Isurus Estral"],
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":23,
+            "nacionalidade":"Coreia"
+        },
+      
+        {
+            "id":62,
+            "name":"Snaker",
+            "Org":["Isurus Estral"],
             "Titulos": 0,
             "Position":"ADC",
             "Current":"ATUANDO",
             "img":"--",
-            "idade":21
+            "idade":22,
+            "nacionalidade":"Argentina"
+        },
+        {
+            "id":63,
+            "name":"Ackerman",
+            "Org":["Isurus Estral"],
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"ATUANDO",
+            "img":"--",
+            "idade":22,
+            "nacionalidade":"Argentina"
+        },
+
+
+
+
+        {
+            "id":64,
+            "name":"Kiari",
+            "Org":["Fluxo","Liberty","Rensga"],
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":25,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":65,
+            "name":"Sting",
+            "Org":["Fluxo","Flamengo","INTZ","FURIA","Cruzeiro"],
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":23,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":66,
+            "name":"Kojima",
+            "Org":["Fluxo"],
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":20,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":67,
+            "name":"Scamber",
+            "Org":["Fluxo"],
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":24,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":68,
+            "name":"xyno",
+            "Org":["FURIA"],
+            "Titulos": 0,
+            "Position":"TOP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":17,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":69,
+            "name":"StineR",
+            "Org":["FURIA"],
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":17,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":70,
+            "name":"Zay",
+            "Org":["FURIA","LOS"],
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":20,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":71,
+            "name":"Tay",
+            "Org":["INTZ","FLUXO","Flamengo","LOUD","Pain","G3X"],
+            "Titulos": 2,
+            "Position":"TOP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":28,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":72,
+            "name":"Aithusa",
+            "Org":["INTZ"],
+            "Titulos": 0,
+            "Position":"MID",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":22,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":73,
+            "name":"Celo",
+            "Org":["LOS"],
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":24,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":74,
+            "name":"RedBert",
+            "Org":["LOS"],
+            "Titulos": 4,
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":26,
+            "nacionalidade":"Brasil"
         }
+      
+      
+      
+      
         
         
         
