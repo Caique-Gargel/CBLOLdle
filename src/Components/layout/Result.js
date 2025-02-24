@@ -1,6 +1,7 @@
 import styles from "./Result.module.css"
 import Quadrado from "./Quadrado"
 
+
 function Result({res,diario})
 {
     
@@ -53,13 +54,15 @@ function Result({res,diario})
             classTitulo="upper"
     }
      //-----------------------------------------------------------
-
      if(res.nacionalidade===diario.nacionalidade)
         classNacionalidade="certo"
     else
         classNacionalidade="errado"
-        
      //-----------------------------------------------------------
+
+        
+        
+
     return(
         <div className={styles.ContainerRes}>
             <Quadrado text={res.name} categorie="Jogador" />

@@ -2,17 +2,25 @@ import styles from "./Home.module.css"
 import logo from "../../5.png"
 import Bloco from "../layout/Bloco";
 import Tutorial from "../layout/Tutorial";
-import Input from "../Forms/Input";
+
 import SubmitButton from "../Forms/SubmitButton";
 import AutoCompleteInput from "../Forms/AutoCompleteInput";
 import Result from "../layout/Result";
-import { useState, useEffect } from "react"
+import { useState, useEffect} from "react"
 function Home(){
     const [players,setPlayers] = useState([])
     const [resposta,setResposta] = useState([])
     const [ListResposta,setListResposta] =useState([])
     const [playerDoDia,setplayerDoDia] = useState([])
-
+    const [acertou,setAcertou]=useState(false)
+    const inpu =document.querySelector("#teste");
+    var imgcorrect=require("../../parabens.gif")
+    
+    
+   /*useEffect(()=>{
+    if(acertou && myref!=null)
+        executeScroll()
+   },[acertou])*/
     useEffect(()=>{
         fetch('http://localhost:5000/players',{
                 method:'GET',
@@ -33,9 +41,12 @@ function Home(){
     },[])
     
     useEffect(()=>{
+        
         var hoje =new Date().toLocaleString().substr(0, 10)
         if(players.length>0)
         {
+            
+            
             setplayerDoDia(players[generateidPerDate()]);
             if(localStorage.getItem("date")!=hoje)
                 localStorage.clear()
@@ -44,6 +55,18 @@ function Home(){
         }
             
     },[players])
+
+    useEffect(()=>{
+        
+        var res=ListResposta.find(({ id }) => id === playerDoDia.id)
+        if(res!=null)
+        {
+            setAcertou(true);
+            inpu.disabled = true;
+        }
+      
+       
+    },[ListResposta])
     // Criar um gerador de "número aleatório" baseado em totalDays
     function seededRandom(seed) {
         const x = Math.sin(seed) * 10000;
@@ -59,7 +82,7 @@ function Home(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 74) + 1;
+        const id = Math.floor(randomValue * 103) + 1;
     
         return id;
     }
@@ -101,7 +124,7 @@ function Home(){
             <Tutorial/>
             <Bloco texto="Digite o nome de um pro-player que tenha jogado no CBLOL em algum momento e use as dicas para descobrir o jogador do dia! " titulo="Adivinhe o jogador do CBLOL de hoje!"/>
             <form className={styles.form}>
-                <AutoCompleteInput suggestions={players.map(player => player.name)} inputValue={resposta} setInputValue={setResposta} submit={EnviaRes2}/>
+                <AutoCompleteInput id="teste" suggestions={players.map(player => player.name)} inputValue={resposta} setInputValue={setResposta} submit={EnviaRes2}/>
                 {/*<Input placeholder="Digite o Nome de um Jogador..." type="text" name="name" handleOnchange={(e)=>setResposta(e.target.value)}/>*/}
                 <SubmitButton onclick={EnviaRes}/>  
             </form>
@@ -111,7 +134,14 @@ function Home(){
                 ))
             }
             
+            <div   className={styles.acertou}>
+            {acertou &&(
+                <Bloco  customClass={"correct"} img={imgcorrect} titulo={"Parabens você acertou o o jogador do dia retorne amanhã para tentar novamente"} />
+            )}
+            
+            </div>
         </div>
+        
     )
 }
 export default Home;

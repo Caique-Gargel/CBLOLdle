@@ -19,3 +19,9 @@
    
     text-align: center;
 }
+.acertou{
+    padding-top: 1em;
+}
+html {
+    scroll-behavior: smooth;
+}

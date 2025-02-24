@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./AutoCompleteInput.module.css"
-const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit}) => {
+const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit,id}) => {
   console.log(suggestions)
 
   
@@ -33,6 +33,7 @@ const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit}) => {
   return (
     <div className={styles.autoinput}>
       <input
+        id={id}
         type="text"
         value={inputValue}
         onChange={handleChange}
