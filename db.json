@@ -108,7 +108,7 @@
         {
             "id":10,
             "name":"Kuri",
-            "Org":["Pain","Red Canids"],
+            "Org":["Pain","Red Canids","Flamengo"],
             "Titulos": 1,
             "Position":"SUP",
             "Current":"ATUANDO",
@@ -1151,8 +1151,41 @@
             "img":"--",
             "idade":22,
             "nacionalidade":"Brasil"
+        },
+        {
+            "id":104,
+            "name":"Geum go",
+            "Org":["Flamengo"],
+            "Titulos": 0,
+            "Position":"JUNGLE",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":23,
+            "nacionalidade":"Coreia"
+        },
+        {
+            "id":105,
+            "name":"Flare",
+            "Org":["Flamengo"],
+            "Titulos": 0,
+            "Position":"ADC",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":23,
+            "nacionalidade":"Brasil"
+        },
+        {
+            "id":106,
+            "name":"Wos",
+            "Org":["Liberty","Flamengo","Vorax","ProGaming","CNB"],
+            "Titulos": 0,
+            "Position":"SUP",
+            "Current":"NÃO ATUANDO",
+            "img":"--",
+            "idade":29,
+            "nacionalidade":"Brasil"
         }
-        
+
         
         
         
