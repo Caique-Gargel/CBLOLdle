@@ -22,7 +22,7 @@ function Home(){
         executeScroll()
    },[acertou])*/
     useEffect(()=>{
-        fetch('http://localhost:5000/players',{
+        fetch('https://api-storage-tiaw-one.vercel.app/players',{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json',
