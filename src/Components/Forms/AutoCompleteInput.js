@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "./AutoCompleteInput.module.css"
+
 const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit,id}) => {
-  console.log(suggestions)
+  
 
   
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
@@ -29,6 +30,16 @@ const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit,id}) => 
     submit(suggestion)
     
   };
+  function loadImg(img){
+      try {
+        return require(`../../imgPlayers/${img}.png`);
+    } catch (e) {
+        if (e.code !== 'MODULE_NOT_FOUND') {
+            throw e;
+        }
+        return require("../../imgPlayers/unknow.png");
+    }
+  }
 
   return (
     <div className={styles.autoinput}>
@@ -48,6 +59,7 @@ const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit,id}) => 
                 onClick={() => handleClick(suggestion)}  
                 
               >
+                <img src={loadImg(suggestion)} alt={suggestion} />
                 {suggestion}
               </li>
             ))

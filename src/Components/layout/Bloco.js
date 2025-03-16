@@ -5,13 +5,15 @@ function Bloco({texto,titulo,customClass,img})
     const myRef = useRef(null)
     const executeScroll = () => myRef.current.scrollIntoView() 
     return(
-        <div className={`${styles.bloco} ${styles[customClass]}`}>
-            <h2>{titulo}</h2><br/>
-            <p>{texto}</p>
-            {img &&(
-                <img ref={myRef} onLoad={executeScroll} src={img} myRef/>
-            )}
-            
+        <div className={styles.containerBloco}>
+            <div className={`${styles.bloco} ${styles[customClass]}`}>
+                <h2>{titulo}</h2><br/>
+                <p>{texto}</p>
+                {img &&(
+                    <img ref={myRef} onLoad={executeScroll} src={img} myRef/>
+                )}
+                
+            </div>
         </div>
         
     );

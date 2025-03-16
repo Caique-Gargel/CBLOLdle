@@ -3,12 +3,9 @@
     width:100%;
     margin: 0 auto;
     padding-bottom: 2%;
+    z-index: 3;
 }
-.icon{
-    font-size: 25px;
-    padding-top: 10px;
-    
-}
+
 .btn{
     padding: 1% 5%;
     background-color: #1E2328;

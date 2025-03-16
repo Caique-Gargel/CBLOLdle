@@ -4,13 +4,14 @@ import styles from "./Modal.module.css"
 function Modal ({isOpen, setOpen})
 {
     const handleBackgroundClick = (event) => {
-        console.log(event.target.id)
+        
         if (event.target.id === "background") {
             setOpen(false);
         }
       };
     if(isOpen)
     {
+        window.scrollTo({top: 0,behavior: 'smooth'})
         
         return(
 

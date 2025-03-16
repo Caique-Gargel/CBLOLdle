@@ -5,4 +5,5 @@
     cursor: pointer;
     padding: 7px 10px;
     border: 2px solid white;
+    z-index: 1;
 }

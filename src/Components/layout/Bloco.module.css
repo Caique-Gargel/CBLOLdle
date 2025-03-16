@@ -17,3 +17,10 @@ margin-bottom: 2%;
     width: 100%;
     background-color: #1B4831;
 }
+.containerBloco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}

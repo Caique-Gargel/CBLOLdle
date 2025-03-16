@@ -15,13 +15,24 @@
  margin: 2% auto;
 }
 .form{
-    width: 100%;
    
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 .acertou{
     padding-top: 1em;
 }
 html {
     scroll-behavior: smooth;
+}
+.downUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
+    
 }

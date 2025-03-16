@@ -1,10 +1,10 @@
 import styles from "./Tutorial.module.css"
 
 import Modal from "./Modal";
-import { useState } from "react";
-function Tutorial()
+
+function Tutorial({open,setOpen})
 {
-    const [open,setOpen] =useState(true);
+   
     return(
         
         <div className={styles.tutorial} > 
