@@ -37,7 +37,7 @@ function Modal ({isOpen, setOpen})
 
                     <h1>Propiedades </h1>
                     <hr/>
-                    <p><b className={styles.topico}>Time:</b> Atua/Último time do jogador, Caso o jogador tenha jogado naquele time anteriormente será Amarelo, para jogadores aposentados é levado em consideração o último time de atuação</p>
+                    <p><b className={styles.topico}>Time:</b> Atuando/Último time do jogador, Caso o jogador tenha jogado naquele time anteriormente será Amarelo, para jogadores aposentados é levado em consideração o último time de atuação</p>
                     <p><b className={styles.subtopico}>Possíveis Valores:</b> LOUD, Pain, Red Canids, etc…</p>
                     <br/>
                     <p><b className={styles.topico}>Títulos:</b> Número de vezes em que aquele jogador foi campeão, as setas ↑↓ indicam se o número de títulos está abaixo ou acima do valor respondido</p>
@@ -45,7 +45,7 @@ function Modal ({isOpen, setOpen})
                     <p><b className={styles.topico}>Posição:</b> Lane principal daquele jogador, em caso de jogadores que jogaram em mais de uma lane levar em consideração a mais jogada</p>
                     <p><b className={styles.subtopico}>Possíveis valores:</b> TOP, MID, JUNGLE, ADC E SUP</p>
                     <br/>
-                    <p><b className={styles.topico}>Idade:</b> Idade atual do jogador, obs: grandes chances de conter erros!!!!</p>
+                    <p><b className={styles.topico}>Idade:</b> Idade atual do jogador, se for <b className={styles.yellow}>Amarelo</b> é porque a idade do jogador do dia é desconhecida, obs: grandes chances de conter erros!!!!</p>
                     <br/>
                     <p><b className={styles.topico}>Situação:</b> Se o jogador está atuando no cblol, jogadores no tier 2, aposentados ou em outras ligas terão o status de NÃO ATUANDO.</p>
                     <p><b className={styles.subtopico}>Possíveis valores:</b> ATUANDO e NÃO ATUANDO</p>

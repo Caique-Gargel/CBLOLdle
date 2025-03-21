@@ -8,9 +8,11 @@
 html, body, #root{
  
   height: 100%;
+  background-color: black;
   background-image: url(./1.png);
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   
 }
 

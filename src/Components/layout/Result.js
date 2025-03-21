@@ -39,7 +39,12 @@ function Result({res,diario,primeiro})
         classIdade="certo"
     else{
         if(res.idade>diario.idade)
-            classIdade="lower"
+        {
+            if(diario.idade===0)
+                classIdade="parcial"
+            else
+                classIdade="lower"
+        } 
         else
             classIdade="upper"
     }
