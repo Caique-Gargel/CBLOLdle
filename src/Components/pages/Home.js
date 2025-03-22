@@ -96,7 +96,7 @@ function Home(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 175) + 1;
+        const id = Math.floor(randomValue * 230) + 1;
     
         return id;
     }
