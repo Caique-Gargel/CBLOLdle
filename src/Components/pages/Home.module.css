@@ -1,3 +1,4 @@
+
 .home{
   
     width: 60%;
@@ -35,4 +36,25 @@ html {
     flex-direction: column-reverse;
     width: 100%;
     
+}
+@media (max-width:450px){
+    .home{
+        width: 100%;
+        
+        margin: 0;
+    }
+    .logo{
+        padding: 0px;
+        border-radius: 30px;
+    }
+    .home img{
+        width: 100%;
+        
+    }
+    .form{
+        width: 100%;
+        
+    }
+   
+
 }

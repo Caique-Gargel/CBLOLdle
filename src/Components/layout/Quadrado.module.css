@@ -19,6 +19,7 @@
 
 .container{
     margin-top: 1em;
+    
 }
 .container p{
     font-weight: bold;
@@ -52,11 +53,7 @@
 /*classes do flip-quadrado*/
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flipCard {
 
-   
-    /* Remove this if you don't want the 3D effect */
-  }
   
   /* This container is needed to position the front and back side */
   .flipCardInner {
@@ -101,4 +98,41 @@
     justify-content: center;
     text-align: center;
     transform: rotateY(180deg);
+  }
+  @media (max-width:450px){
+    .quadrado{
+      max-height: 70px;
+      width: 70px;
+      margin: 1em 0.2em 0 0.2em ;
+      
+    }
+    .flipCardInner{
+      max-height: 70px;
+      width: 70px;
+      margin: 1em 0.2em 0 0.2em ;
+      
+    }
+    .container p{
+      font-weight: bold;
+      text-shadow: 0 0 3px black, 0 0 5px black;
+      font-size: 15px;
+      
+    }
+    .container img{
+      width: 70px;
+      background-color: #1E2328;
+      
+    }
+    .container{
+      display: inline-block;
+      
+    }
+    .upper{
+      background-image: url(../../UpperMobile.png);
+      
+    }
+    .lower{
+        background-image: url(../../LowerMobile.png);
+        
+    }
   }

@@ -5,7 +5,7 @@ margin: 0 auto;
 background-color: #1E2328;
 padding: 2%;
 border: 2px solid white;
-border-radius: 40px;
+border-radius: 25px;
 margin-bottom: 2%;
 }
 .bloco p{
@@ -23,4 +23,19 @@ margin-bottom: 2%;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+}
+@media (max-width:450px){
+    .bloco{
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    .correct{
+        width: 100%;
+    }
+    .containerBloco{
+        width: 100%;
+    }
 }

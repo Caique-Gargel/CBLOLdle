@@ -67,3 +67,9 @@
     right: -10px;
     border: 2px solid white;
 }
+@media (max-width:450px){ 
+        .modal{
+            width: 80%;
+        }
+    
+}

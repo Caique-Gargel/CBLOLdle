@@ -50,3 +50,20 @@
    
     margin-right: 5px ;
 }
+@media (max-width:450px){
+    .autoinput input{
+        width: 100%;
+        margin-left: 0;
+    }
+    .autoinput ul{
+        width: 87%;
+        margin-left: 0;
+    }
+    .autoinput li{
+        width: 100%;
+    }
+    .autoinput{
+        width: 82%;
+        margin-left: 2%;
+    }
+}

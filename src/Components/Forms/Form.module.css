@@ -3,3 +3,9 @@
    
     text-align: center;
 }
+@media (max-width:450px){
+    .form{
+      
+        margin: 10em;
+    }
+}
