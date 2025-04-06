@@ -129,7 +129,7 @@ function Quote(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 1) ;
+        const id = Math.floor(randomValue * 40) ;
     
         return id;
     }
