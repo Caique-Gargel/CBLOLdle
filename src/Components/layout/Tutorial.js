@@ -1,8 +1,8 @@
 import styles from "./Tutorial.module.css"
 
 import Modal from "./Modal";
-
-function Tutorial({open,setOpen})
+import ModalQuotes from "./ModalQuotes";
+function Tutorial({open,setOpen,tipo})
 {
    
     return(
@@ -10,8 +10,14 @@ function Tutorial({open,setOpen})
         <div className={styles.tutorial} > 
             <button onClick={()=>setOpen(true)} className={styles.btn}>Como Jogar</button>
             
+            {tipo==="classic" &&(
+                <Modal isOpen={open} setOpen={setOpen}/>
+            )}
+            {tipo==="quotes" &&(
+                <ModalQuotes isOpen={open} setOpen={setOpen}/>
+            )}
             
-            <Modal isOpen={open} setOpen={setOpen}/>
+            
         </div>
     )
 }

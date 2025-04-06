@@ -11,9 +11,13 @@
     background-color: #1E2328;
     font-size: 20px;
     border-radius: 80px;
-    color: white;
+    color: #D0D0D0;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid white;
+    border: 2px solid #D0D0D0;
     cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid white;
+    color: white;
 }

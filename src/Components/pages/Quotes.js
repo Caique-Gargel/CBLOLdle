@@ -5,14 +5,17 @@ import Tutorial from "../layout/Tutorial";
 import MenuModos from "../layout/MenuModos";
 import SubmitButton from "../Forms/SubmitButton";
 import AutoCompleteInput from "../Forms/AutoCompleteInput";
-import Result from "../layout/Result";
+
 import { useState, useEffect} from "react"
 import BotaoDica from "../layout/BotaoDica"; // Importar BotaoDica
-function Home(){
+import ResultFala from "../layout/ResultFala";
+function Quote(){
     const [players,setPlayers] = useState([])
+    const [falas,setFalas] = useState([])
     const [resposta,setResposta] = useState([])
-    const [ListResposta,setListResposta] =useState([])
+    const [ListRespostaFala,setListRespostaFala] =useState([])
     const [playerDoDia,setplayerDoDia] = useState([])
+    const [falaDoDia,setfalaDoDia] = useState("")
     const [acertou,setAcertou]=useState(false)
     const inpu =document.querySelector("#teste");
     var flaglist=false;
@@ -20,8 +23,8 @@ function Home(){
     const [open,setOpen] =useState(false);
    
     
-    
-    
+
+   
    /*useEffect(()=>{
     if(acertou && myref!=null)
         executeScroll()
@@ -38,12 +41,22 @@ function Home(){
            
             setPlayers(data)
             
-           
-            
-            
             
         })
         .catch((err)=>console.log(err))
+        fetch('https://api-storage-tiaw-one.vercel.app/falas',{
+            method:'GET',
+            headers:{
+                'Content-Type':'application/json',
+                },
+            }).then(resp => resp.json())
+            .then((data)=>{
+            
+                setFalas(data)
+                
+                
+            })
+    .catch((err)=>console.log(err))
     },[])
     
     useEffect(()=>{
@@ -51,32 +64,48 @@ function Home(){
         var hoje =new Date().toLocaleString().substr(0, 10)
         if(players.length>0)
         {
-            
-            
-            setplayerDoDia(players[generateidPerDate()]);
-            if(localStorage.getItem("date")!=hoje)
+            if(falas.length>0)
             {
-                console.log("asdsadsadsadsa");
+                console.log(falas);
+                console.log("--------------------");
+                var id =falas[generateidPerDate()].player_id;
+                console.log(id);
                 
-                localStorage.removeItem("listRes")
-                localStorage.removeItem("date");
+                setfalaDoDia(falas[generateidPerDate()].fala)
+                console.log(falaDoDia);
+                
+                setplayerDoDia(players[id-1])
+                console.log(playerDoDia.name);
+                if (playerDoDia.id!=undefined && playerDoDia.id!== id) {
+                    throw new Error("Error: playerDoDia.id:"+playerDoDia.id +" is not equal to id:"+id);
+                }
+            }
+            
+            
+            
+            
+            
+            if(localStorage.getItem("date2")!=hoje)
+            {
+                localStorage.removeItem("listRes2")
+                localStorage.removeItem("date2");
                 
                 
             }
             else    
-                setListResposta(JSON.parse(localStorage.getItem("listRes")))
+                setListRespostaFala(JSON.parse(localStorage.getItem("listRes2")))
         }
             
     },[players])
 
     useEffect(()=>{
         console.log("-------------------");
-        console.log(ListResposta);
+        console.log(ListRespostaFala);
         
-        var res=ListResposta.find(({ id }) => id === playerDoDia.id)
+        var res=ListRespostaFala.find(({ id }) => id === playerDoDia.id)
         if(res!=null)
         {
-            setTimeout(() => setAcertou(true), 3500);
+            setTimeout(() => setAcertou(true), 500);
            
             
             inpu.disabled = true;
@@ -84,7 +113,7 @@ function Home(){
         
       
        
-    },[ListResposta])
+    },[ListRespostaFala])
     // Criar um gerador de "número aleatório" baseado em totalDays
     function seededRandom(seed) {
         const x = Math.sin(seed) * 10000;
@@ -100,7 +129,7 @@ function Home(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 230) + 1;
+        const id = Math.floor(randomValue * 1) ;
     
         return id;
     }
@@ -111,10 +140,10 @@ function Home(){
         var playerAdivinhado= players.find(({ name }) => name === resposta);
         
         if(playerAdivinhado!=null)
-            if((ListResposta.find(({ name }) => name === resposta))==null){
-                setListResposta(ListResposta => [...ListResposta,playerAdivinhado]);
-                localStorage.setItem("listRes", JSON.stringify([...ListResposta,playerAdivinhado]));
-                localStorage.setItem("date",new Date().toLocaleString().substr(0, 10))
+            if((ListRespostaFala.find(({ name }) => name === resposta))==null){
+                setListRespostaFala(ListRespostaFala => [...ListRespostaFala,playerAdivinhado]);
+                localStorage.setItem("listRes2", JSON.stringify([...ListRespostaFala,playerAdivinhado]));
+                localStorage.setItem("date2",new Date().toLocaleString().substr(0, 10))
             }
             
         
@@ -127,11 +156,11 @@ function Home(){
         var playerAdivinhado= players.find(({ name }) => name === res);
        
         if(playerAdivinhado!=null)
-            if((ListResposta.find(({ name }) => name === res))==null)
+            if((ListRespostaFala.find(({ name }) => name === res))==null)
             {
-                setListResposta(ListResposta => [...ListResposta,playerAdivinhado]);
-                localStorage.setItem("listRes", JSON.stringify([...ListResposta,playerAdivinhado]));
-                localStorage.setItem("date",new Date().toLocaleString().substr(0, 10))
+                setListRespostaFala(ListRespostaFala => [...ListRespostaFala,playerAdivinhado]);
+                localStorage.setItem("listRes2", JSON.stringify([...ListRespostaFala,playerAdivinhado]));
+                localStorage.setItem("date2",new Date().toLocaleString().substr(0, 10))
             }
                  
 
@@ -139,23 +168,24 @@ function Home(){
     return(
         <div className={styles.home}>
             <img className={styles.logo} src={logo} alt="cbloldle"></img>
-            <MenuModos modo="classic"/>
-            <Tutorial setOpen={setOpen} open={open} tipo="classic"/>
+            <MenuModos modo="quotes"/>
+            <Tutorial setOpen={setOpen} open={open} tipo="quotes"/>
             
-            <Bloco texto="Digite o nome de um pro-player que tenha jogado no CBLOL em algum momento e use as dicas para descobrir o jogador do dia! " titulo="Adivinhe o jogador do CBLOL de hoje!"/>
+            <Bloco texto={falaDoDia} titulo="Qual jogador disse :" customClass="fala" />
             <form className={styles.form}>
                 <AutoCompleteInput id="teste" suggestions={players.map(player => player.name)} inputValue={resposta} setInputValue={setResposta} submit={EnviaRes2}/>
                 {/*<Input placeholder="Digite o Nome de um Jogador..." type="text" name="name" handleOnchange={(e)=>setResposta(e.target.value)}/>*/}
                 <SubmitButton onclick={EnviaRes}/>  
             </form>
-            <BotaoDica ListResposta={ListResposta} resposta={playerDoDia} /> {/* Adicionar BotaoDica */}
+            <BotaoDica ListResposta={ListRespostaFala} resposta={playerDoDia} />
             <div className={styles.downUp}>
             {
-                ListResposta.map((item)=>(
-                    <Result res={item} diario={playerDoDia} primeiro={ListResposta[ListResposta.length-1]} />
+                ListRespostaFala.map((item)=>(
+                    <ResultFala res={item} diario={playerDoDia}  />
                 ))
             }
             </div>
+           
             <div   className={styles.acertou}>
             {acertou &&(
                 <Bloco  customClass={"correct"} img={imgcorrect} titulo={"Parabens você acertou o o jogador do dia retorne amanhã para tentar novamente"} />
@@ -166,4 +196,4 @@ function Home(){
         
     )
 }
-export default Home;
+export default Quote;

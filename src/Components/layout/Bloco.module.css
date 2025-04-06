@@ -17,12 +17,33 @@ margin-bottom: 2%;
     width: 100%;
     background-color: #1B4831;
 }
+.fala p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family:  Helvetica, sans-serif;
+}
 .containerBloco{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.RedirectContainer p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.RedirectContainer a{
+    padding: 1em;
+    font-size: 30px;
+}
+.RedirectContainer a:hover{
+   color: blue;
 }
 @media (max-width:450px){
     .bloco{

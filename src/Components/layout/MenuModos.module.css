@@ -1,0 +1,86 @@
+
+    .menu{
+    text-align: center;
+    width:58%;
+    margin: 0 auto;
+    
+    padding: 2%;
+    
+    margin-bottom: 2%;
+    }
+    .bloco p{
+        color: #979797;
+        text-align: justify;
+        font-size: 17.6px;
+    }
+    
+    .containerMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .options{
+        position: relative;
+    }
+  
+    .social_list li{
+        margin: 0 1.5em;
+        z-index: 1;
+    }
+    .social_list li a{
+        text-decoration: none;
+        color: black;
+       
+        
+    }
+    .social_list img{
+        width: 50px;
+        cursor: pointer;
+        
+        
+    }
+    .social_list img:hover{
+        transform: scale(1.4);
+        
+    }
+    .active{
+        transform: scale(1.4);
+    }
+    .social_list{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    
+    .ropeBackGround{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../Rope.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 42.5% 13px;
+        z-index: 0;
+    }
+    @media (max-width:450px){
+        .bloco{
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+       
+        .containerBloco{
+            width: 100%;
+        }
+        .ropeBackGround{
+           
+            background-size: 78.5% 13px;
+            
+        }
+    }
