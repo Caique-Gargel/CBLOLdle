@@ -170,8 +170,10 @@ function Quote(){
             <img className={styles.logo} src={logo} alt="cbloldle"></img>
             <MenuModos modo="quotes"/>
             <Tutorial setOpen={setOpen} open={open} tipo="quotes"/>
+            {falaDoDia.length>0 &&(
+                <Bloco texto={falaDoDia} titulo="Qual jogador disse :" customClass="fala" />
+            )}
             
-            <Bloco texto={falaDoDia} titulo="Qual jogador disse :" customClass="fala" />
             <form className={styles.form}>
                 <AutoCompleteInput id="teste" suggestions={players.map(player => player.name)} inputValue={resposta} setInputValue={setResposta} submit={EnviaRes2}/>
                 {/*<Input placeholder="Digite o Nome de um Jogador..." type="text" name="name" handleOnchange={(e)=>setResposta(e.target.value)}/>*/}
