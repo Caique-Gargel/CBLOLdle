@@ -59,44 +59,22 @@ function Quote(){
     .catch((err)=>console.log(err))
     },[])
     
-    useEffect(()=>{
-        
-        var hoje =new Date().toLocaleString().substr(0, 10)
-        if(players.length>0)
-        {
-            if(falas.length>0)
-            {
-                console.log(falas);
-                console.log("--------------------");
-                var id =falas[generateidPerDate()].player_id;
-                console.log(id);
-                
-                setfalaDoDia(falas[generateidPerDate()].fala)
-                console.log(falaDoDia);
-                
-                setplayerDoDia(players[id-1])
-                console.log(playerDoDia.name);
-                if (playerDoDia.id!=undefined && playerDoDia.id!== id) {
-                    throw new Error("Error: playerDoDia.id:"+playerDoDia.id +" is not equal to id:"+id);
-                }
-            }
-            
-            
-            
-            
-            
-            if(localStorage.getItem("date2")!=hoje)
-            {
-                localStorage.removeItem("listRes2")
-                localStorage.removeItem("date2");
-                
-                
-            }
-            else    
-                setListRespostaFala(JSON.parse(localStorage.getItem("listRes2")))
+    useEffect(() => {
+        if (players.length > 0 && falas.length > 0) {
+          var hoje = new Date().toLocaleString().substr(0, 10);
+          
+          var id = falas[generateidPerDate()].player_id;
+          setfalaDoDia(falas[generateidPerDate()].fala);
+          setplayerDoDia(players[id - 1]);
+      
+          if (localStorage.getItem("date2") !== hoje) {
+            localStorage.removeItem("listRes2");
+            localStorage.removeItem("date2");
+          } else {
+            setListRespostaFala(JSON.parse(localStorage.getItem("listRes2")));
+          }
         }
-            
-    },[players])
+      }, [players, falas]);
 
     useEffect(()=>{
         console.log("-------------------");
@@ -170,7 +148,7 @@ function Quote(){
             <img className={styles.logo} src={logo} alt="cbloldle"></img>
             <MenuModos modo="quotes"/>
             <Tutorial setOpen={setOpen} open={open} tipo="quotes"/>
-            {falaDoDia.length>0 &&(
+            {falaDoDia &&(
                 <Bloco texto={falaDoDia} titulo="Qual jogador disse :" customClass="fala" />
             )}
             

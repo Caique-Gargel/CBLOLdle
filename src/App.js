@@ -4,7 +4,7 @@ import Container from './Components/layout/Container';
 import Footer from './Components/layout/Footer';
 import { Analytics } from "@vercel/analytics/react"
 import Quotes from './Components/pages/Quotes';
-import Date from './Components/pages/Date';
+import DateGame from './Components/pages/DateGame';
 function App() {
   return (
     <>
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route  path="/" element={<Home />} > </Route>
         <Route  path="/falas" element={<Quotes />} > </Route>
-        <Route  path="/date" element={<Date />} > </Route>
+        <Route  path="/date" element={<DateGame />} > </Route>
       </Routes>
       </Container>
       <Footer/>

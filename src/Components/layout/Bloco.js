@@ -10,7 +10,8 @@ function Bloco({texto,titulo,customClass,img,modo})
             <div className={`${styles.bloco} ${styles[customClass]}`}>
                 <h2>{titulo}</h2><br/>
                 <p>{texto}</p>
-                {img &&(
+                
+                {customClass==="correct" &&(
                     <div className={styles.RedirectContainer}>
                     <img ref={myRef} onLoad={executeScroll} src={img} myRef/>
                     <p>Aproveite para jogar Os Outros Modos:</p>
