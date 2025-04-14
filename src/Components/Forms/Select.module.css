@@ -1,0 +1,35 @@
+.form_control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form_control label{
+    margin-left: 1em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    font-size: 22px;
+    text-shadow:  2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+.form_control select{
+    text-align: center;
+    padding: .3em;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: #1E2328;
+    width: 10em;
+    font-size: 19px;
+    
+}
+.perguntaBonus select{
+    width: 5em;
+    font-size: 17px;
+}
+.perguntaBonus label{
+   
+    font-size: 21px;
+}
+.form_control option{
+    cursor: pointer;
+}

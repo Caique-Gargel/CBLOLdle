@@ -2,6 +2,7 @@ import styles from "./Tutorial.module.css"
 
 import Modal from "./Modal";
 import ModalQuotes from "./ModalQuotes";
+import ModalDate from "./ModalDate";
 function Tutorial({open,setOpen,tipo})
 {
    
@@ -9,7 +10,9 @@ function Tutorial({open,setOpen,tipo})
         
         <div className={styles.tutorial} > 
             <button onClick={()=>setOpen(true)} className={styles.btn}>Como Jogar</button>
-            
+            {tipo==="date" &&(
+                <ModalDate isOpen={open} setOpen={setOpen}/>
+            )}
             {tipo==="classic" &&(
                 <Modal isOpen={open} setOpen={setOpen}/>
             )}

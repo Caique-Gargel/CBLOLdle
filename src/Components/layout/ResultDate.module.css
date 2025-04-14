@@ -21,7 +21,6 @@
 .certo{
     background-color: #35B956;
 }
-
 .errado{
     background-color: #DF5858;
 }
@@ -30,10 +29,4 @@
 }
 .errado:hover{
     background-color: #f80707;
-}
-@media (max-width:450px){
-    .containerRes{
-      width: 90%;
-    }
-   
 }

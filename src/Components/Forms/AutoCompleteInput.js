@@ -4,7 +4,7 @@ import styles from "./AutoCompleteInput.module.css"
 const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit,id}) => {
   
 
-  
+ 
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
@@ -49,6 +49,10 @@ const AutoCompleteInput = ({suggestions,inputValue,setInputValue,submit,id}) => 
         value={inputValue}
         onChange={handleChange}
         placeholder="Digite para buscar..."
+        autocapitalize="off"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
       />
       {showSuggestions && (
         <ul>

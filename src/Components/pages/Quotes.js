@@ -77,8 +77,7 @@ function Quote(){
       }, [players, falas]);
 
     useEffect(()=>{
-        console.log("-------------------");
-        console.log(ListRespostaFala);
+      
         
         var res=ListRespostaFala.find(({ id }) => id === playerDoDia.id)
         if(res!=null)
@@ -161,14 +160,14 @@ function Quote(){
             <div className={styles.downUp}>
             {
                 ListRespostaFala.map((item)=>(
-                    <ResultFala res={item} diario={playerDoDia}  />
+                    <ResultFala res={item} diario={playerDoDia} primeiro={ListRespostaFala[ListRespostaFala.length-1]} />
                 ))
             }
             </div>
            
             <div   className={styles.acertou}>
             {acertou &&(
-                <Bloco  customClass={"correct"} img={imgcorrect} titulo={"Parabens você acertou o o jogador do dia retorne amanhã para tentar novamente"} />
+                <Bloco  customClass={"correct"} img={imgcorrect} titulo={"Parabéns você acertou o jogador dono da frase do dia retorne amanhã para tentar novamente"} />
             )}
             
             </div>

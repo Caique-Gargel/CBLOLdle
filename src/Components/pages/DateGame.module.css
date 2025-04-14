@@ -6,16 +6,15 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-}
-.home h1{
-    text-align: center;
-    font-size: 70px;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    background-color: gray;
     
-
+}
+.home form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 .logo{
 
@@ -25,3 +24,14 @@
  padding: 0px 80px 0px 80px;
  margin: 2% auto;
 }
+.downUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
+    
+}
+    
+  

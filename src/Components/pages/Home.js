@@ -56,7 +56,7 @@ function Home(){
             setplayerDoDia(players[generateidPerDate()]);
             if(localStorage.getItem("date")!=hoje)
             {
-                console.log("asdsadsadsadsa");
+               
                 
                 localStorage.removeItem("listRes")
                 localStorage.removeItem("date");
@@ -70,8 +70,8 @@ function Home(){
     },[players])
 
     useEffect(()=>{
-        console.log("-------------------");
-        console.log(ListResposta);
+        
+       
         
         var res=ListResposta.find(({ id }) => id === playerDoDia.id)
         if(res!=null)
@@ -158,7 +158,7 @@ function Home(){
             </div>
             <div   className={styles.acertou}>
             {acertou &&(
-                <Bloco  customClass={"correct"} img={imgcorrect} titulo={"Parabens você acertou o o jogador do dia retorne amanhã para tentar novamente"} />
+                <Bloco  customClass={"correct"} img={imgcorrect} titulo={"Parabéns você acertou o jogador do dia retorne amanhã para tentar novamente"} />
             )}
             
             </div>

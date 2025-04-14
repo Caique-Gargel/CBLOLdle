@@ -33,6 +33,12 @@
 .certo{
     background-color: #10c239;
 }
+.certo:hover{
+  background-color: #19e84c;
+}
+.errado:hover{
+  background-color: #e35454;
+}
 .parcial{
     background-color: #d49e15;
 }

@@ -17,6 +17,21 @@ margin-bottom: 2%;
     width: 100%;
     background-color: #1B4831;
 }
+.date{
+    width: 100%;
+}
+.date p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family:  Helvetica, sans-serif;
+}
+
+.date img{
+    width: 85%;
+    height: 85%;
+    margin-bottom: 1.5em;
+}
 .fala p{
     text-align: center;
     color: white;
@@ -29,13 +44,21 @@ margin-bottom: 2%;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    
+}
+.imgRedirect{
+    width: 15%;
 }
 
+.imgRedirect:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 .RedirectContainer p{
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 .RedirectContainer a{
@@ -44,6 +67,27 @@ margin-bottom: 2%;
 }
 .RedirectContainer a:hover{
    color: blue;
+}
+.perguntaBonusContainer {
+    
+    background-color: #1E2328;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.containerResBonus .certo{
+    padding-top: 0;
+    color: #35B956;
+    padding-bottom: .5em;
+}
+.containerResBonus .errado{
+    padding-top: 0;
+    color: #DF5858;
+    padding-bottom: .5em;
+}
+.containerResBonus .label{
+    font-size: 16px;
+    padding-bottom: 0;
 }
 @media (max-width:450px){
     .bloco{

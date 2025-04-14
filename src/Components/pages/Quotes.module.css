@@ -21,3 +21,24 @@
     flex-wrap: wrap;
     margin: 0 auto;
 }
+@media (max-width:450px){
+    .quotes{
+        width: 100%;
+        
+        margin: 0;
+    }
+    .logo{
+        padding: 0px;
+        border-radius: 30px;
+    }
+    .home img{
+        width: 100%;
+        
+    }
+    .form{
+        width: 100%;
+        
+    }
+   
+
+}

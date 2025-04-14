@@ -1,10 +1,16 @@
 import styles from "./Result.module.css"
 import Quadrado from "./Quadrado"
-
-
+import { useRef, useEffect } from "react"
 function Result({res,diario,primeiro})
 {
+   
+    const myRef = useRef(null);
     
+        useEffect(() => {
+            if (primeiro === res && myRef.current) {
+                myRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' } );
+            }
+        }, [primeiro, res]); // Executa o scroll apenas quando `primeiro` ou `res` mudarem
     
     var classTime, classTitulo, classPosition,classIdade,classSituacao,classNacionalidade;
     var flagPrimeiro=false;
@@ -71,7 +77,7 @@ function Result({res,diario,primeiro})
         
 
     return(
-        <div className={styles.ContainerRes}>
+        <div className={styles.ContainerRes} ref={primeiro === res ? myRef : null}>
             <Quadrado text={res.name} categorie="Jogador" img={res.name} flagPrimeiro={flagPrimeiro} />
             <Quadrado text={res.Org[0]} categorie="Time" customClass={classTime} img="" flagPrimeiro={flagPrimeiro} />
             <Quadrado text={res.Titulos} categorie="Títulos" customClass={classTitulo} img="" flagPrimeiro={flagPrimeiro}/>

@@ -1,7 +1,14 @@
 import styles from './ResultFala.module.css';
-
-function ResultFala({res,diario})
+import {useRef, useEffect} from 'react';
+function ResultFala({res,diario,primeiro})
 {
+    const myRef = useRef(null);
+    
+        useEffect(() => {
+            if (primeiro === res && myRef.current) {
+                myRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' } );
+            }
+        }, [primeiro, res]); // Executa o scroll apenas quando `primeiro` ou `res` mudarem
     var m;
     var img
     try {
@@ -23,7 +30,7 @@ function ResultFala({res,diario})
     else
         customClass="errado"
     return (
-        <div className={`${styles.containerRes} ${styles[customClass]} `}>
+        <div className={`${styles.containerRes} ${styles[customClass]} `} ref={primeiro === res ? myRef : null}>
             <img src={m}/>
             <h1>{res.name}</h1>
         </div>
