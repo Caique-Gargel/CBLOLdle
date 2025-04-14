@@ -3,9 +3,9 @@ import {useRef,useEffect,useState} from "react"
 import Select from "../Forms/Select"
 import Button from "../Forms/Button"
 import { Link } from "react-router-dom"
-import imgA from '../../A.png'
-import imgB from '../../B.png'
-import imgC from '../../C.png'
+import imgA from '../../ModoA.png'
+import imgB from '../../ModoB.png'
+import imgC from '../../ModoC.png'
 
 function Bloco({texto,titulo,customClass,img,perguntaBonus})
 {
