@@ -1,0 +1,234 @@
+.background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 160%;
+    background-color: rgba(0,0,0,0.624);
+    z-index: 4;
+}
+.topico{
+    color: #089BA0;
+}
+.subtopico{
+    color: #66937D;
+}
+.imgGSTV{
+    width: 65%;
+}
+
+.modal{
+    font-size: 17.6px;
+    position: relative;
+    background-color: #1E2328;
+    margin: 3% auto;
+    width: 40%;
+    min-height: 300px;
+    padding: 1em;
+    border: 2px solid white;
+    text-align: center;
+    z-index: 4;
+}
+.modal hr{
+    border: 2px solid white;
+    margin-bottom: 1em;
+    
+}
+.modal h1{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.modal a:hover {
+    color: blue;
+}
+.modal p{
+    margin-bottom: 0.4em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.modal b{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+.btn{
+    cursor: pointer;
+    background-color: #C72929;
+    padding: 0.5em;
+    position: absolute;
+    top:-10px;
+    right: -10px;
+    border: 2px solid white;
+}
+
+.modal input{
+    display: block;
+    
+    margin: 0 auto 0 auto;
+    height: 3em;
+    width: 95%;
+    background-color: #000000;
+    border: 2px solid white;
+    font-size: 18px;
+    border-radius: 5px;
+    caret-color: white;
+    padding-left: 0.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal input:focus{
+    outline: none;
+    border: 2px solid #2563eb;
+    
+}
+.modal textarea:focus{
+    outline: none;
+    border: 2px solid #2563eb;
+}
+
+.inputName::placeholder {
+  transition: opacity 0.3s ease;
+}
+
+.inputName:focus::placeholder {
+  opacity: 0;
+}
+.modal textarea::placeholder {
+  transition: opacity 0.3s ease;
+}
+
+.modal textarea:focus::placeholder {
+  opacity: 0;
+}
+.containerInput{
+    margin-top:2em ;
+    
+}
+.containerInput:has(textarea:focus) .topLabel {
+    opacity: 100%;
+    color: blue;
+}
+.containerInput:has(input:focus) .topLabel {
+    opacity: 100%;
+    color: #2563eb;
+}
+.containerInput textarea{
+    display: block;
+    margin: 0 auto;
+    text-align: justify;
+    height: 7.2em;
+    width: 95%;
+    background-color: #000000;
+    border: 2px solid white;
+    font-size: 18px;
+    border-radius: 5px;
+    caret-color: white;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.PixContainer textarea{
+    display: block;
+    margin: 0 auto;
+    text-align: justify;
+    height: 3.5em;
+    width: 85%;
+    background-color: #000000;
+    border: 2px solid white;
+    font-size: 18px;
+    border-radius: 5px;
+    caret-color: white;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.confirmBtn {
+    padding: 0.8em 2.5em;
+    background-color: #285ccc;
+    color: #D0D0D0;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    border: 2px solid #D0D0D0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin: 1em auto;
+    display: block;
+    margin-bottom: 0;
+    
+}
+.copiaEColaContainer{
+    margin-top: 1.5em;
+    
+}
+.voltarBtn{
+    padding: 1em;
+    background-color: #1E2328;
+    color: #D0D0D0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5em auto;
+    cursor: pointer;
+    width:85% ;
+    
+}
+.copyBtn{
+    padding: 1em;
+    background-color: #169989;
+    color: #D0D0D0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #D0D0D0;
+    margin: 0.5em auto;
+    cursor: pointer;
+    width:85% ;
+    font-weight: bold;
+}
+
+.confirmBtn:hover {
+    background-color: #2563eb;
+    color: #fff;
+    
+    border: 2px solid white;
+}
+.topLabel{
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: relative;
+    color: white;
+    font-size: 17px;
+    display: block;
+    text-align: left;
+    margin-left: 1em;
+    z-index: 2;
+    
+}
+
+.bottomLabel{
+    position: relative;
+    color: #A9A9A9;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+}
+.valueLabel{
+    opacity: 100%;
+}
+
+@media (max-width:450px){ 
+    .modal{
+        width: 80%;
+    }
+
+}

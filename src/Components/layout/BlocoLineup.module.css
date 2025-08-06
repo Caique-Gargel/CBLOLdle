@@ -1,0 +1,103 @@
+.bloco{
+    text-align: center;
+    width:150%;
+    margin: 0 auto;
+    background-color: #1E2328;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-bottom: 11.5%;
+  
+}
+.containerRes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 0.45em;
+    
+    border: 0.5px solid white;
+}
+.containerRes h2{
+    font-size: 1.4em;
+    
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+.containerRole{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roleLabel{
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    
+}
+.roleIcon{
+    width: 40%;
+}
+.profileIcon{
+    border: 2px solid white;
+    background-color: #515254;
+    margin-top: 1em;
+    width: 70%;
+    width: 150px;
+    height: 140px;
+    border-radius: 100%;
+}
+.profileIcon:hover{
+   background-color: #606163;
+}
+.role{
+    
+    margin: 0.5em;
+    height: 22.5em;
+    width: 20em;
+    border: 2px solid white;
+}
+
+.certo{
+    background-color: #10c239;
+}
+.certo:hover{
+  background-color: #19e84c;
+}
+.errado{
+    background-color: red;
+}
+.errado:hover{
+  background-color: #e35454;
+}
+
+.containerBloco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+
+
+@media (max-width:450px){
+    .bloco{
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    .correct{
+        width: 100%;
+    }
+    .containerBloco{
+        width: 100%;
+    }
+}

@@ -9,6 +9,7 @@ import Button from "../Forms/Button"
 import ResultDate from "../layout/ResultDate"
 import imgcorrect from "../../parabens.gif"
 
+
 function DateGame(){
     const inpu =document.querySelector("#buttonComfirmarDate");
     const [open,setOpen] =useState(false)
@@ -59,6 +60,10 @@ function DateGame(){
             .then((data)=>{
                
                 setFinais(data)
+                window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+                });
                 
             })
             .catch((err)=>console.log(err))

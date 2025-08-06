@@ -1,0 +1,71 @@
+
+.autoinput ul{
+    list-style-type: none;
+    
+    
+    border-radius: 4px;
+    
+    overflow: auto;
+    position:absolute;
+    
+    margin:  auto;
+    margin-top: 3px;
+    background-color: #1E2328;
+   
+    z-index: 2;
+    max-height: 14.4em;
+    width: 13em;
+    
+}
+.autoinput li{
+    
+    text-align: justify;
+    padding: 2px;
+    padding-left: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    background-color: #1E2328;
+    height: 3.8em;
+    
+}
+.autoinput li:hover{
+
+    background-color: #292D30;
+}
+
+.autoinput input{
+    margin-top: 1em;
+    height: 2.5em;
+    width: 11em;
+    background-color: #000000;
+    border: 2px solid white;
+    font-size: 17.6px;
+    border-radius: 5px;
+    caret-color: white;
+    padding: 0.2em;
+   
+}
+.autoinput img{
+    width: 38%;
+   
+    margin-right: 2px ;
+}
+@media (max-width:450px){
+    .autoinput input{
+        width: 100%;
+        margin-left: 0;
+    }
+    .autoinput ul{
+        width: 87%;
+        margin-left: 0;
+    }
+    .autoinput li{
+        width: 100%;
+    }
+    .autoinput{
+        width: 82%;
+        margin-left: 2%;
+    }
+}

@@ -26,7 +26,7 @@
     }
   
     .social_list li{
-        margin: 0 1.5em;
+        margin: 0 1em;
         z-index: 1;
     }
     .social_list li a{
@@ -63,7 +63,7 @@
         background-image: url(../../Rope.png);
         background-repeat: no-repeat;
         background-position: 50%;
-        background-size: 42.5% 13px;
+        background-size: 83.5% 13px;
         z-index: 0;
     }
     @media (max-width:450px){

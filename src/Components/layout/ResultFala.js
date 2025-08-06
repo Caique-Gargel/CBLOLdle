@@ -25,6 +25,7 @@ function ResultFala({res,diario,primeiro})
         
     }
     var customClass;
+   
     if(res.id===diario.id)
         customClass="certo"
     else

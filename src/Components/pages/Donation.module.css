@@ -1,0 +1,17 @@
+.home{
+  
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.logo{
+
+ background-color: #1E2328;
+ border: 2px solid white;
+ border-radius: 80px;
+ padding: 0px 80px 0px 80px;
+ margin: 2% auto;
+}

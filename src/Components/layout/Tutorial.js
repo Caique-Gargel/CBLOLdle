@@ -3,6 +3,7 @@ import styles from "./Tutorial.module.css"
 import Modal from "./Modal";
 import ModalQuotes from "./ModalQuotes";
 import ModalDate from "./ModalDate";
+import ModalLineup from "./ModalLineup";
 function Tutorial({open,setOpen,tipo})
 {
    
@@ -18,6 +19,9 @@ function Tutorial({open,setOpen,tipo})
             )}
             {tipo==="quotes" &&(
                 <ModalQuotes isOpen={open} setOpen={setOpen}/>
+            )}
+            {tipo==="lineup" &&(
+                <ModalLineup isOpen={open} setOpen={setOpen}/>
             )}
             
             

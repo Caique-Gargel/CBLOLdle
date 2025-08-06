@@ -65,7 +65,7 @@ function Quote(){
           
           var id = falas[generateidPerDate()].player_id;
           setfalaDoDia(falas[generateidPerDate()].fala);
-          setplayerDoDia(players[id - 1]);
+          setplayerDoDia(players.find(player => player.id === id));
       
           if (localStorage.getItem("date2") !== hoje) {
             localStorage.removeItem("listRes2");

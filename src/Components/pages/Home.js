@@ -21,7 +21,6 @@ function Home(){
    
     
     
-    
    /*useEffect(()=>{
     if(acertou && myref!=null)
         executeScroll()
@@ -37,11 +36,7 @@ function Home(){
         .then((data)=>{
            
             setPlayers(data)
-            
-           
-            
-            
-            
+
         })
         .catch((err)=>console.log(err))
     },[])
@@ -100,7 +95,7 @@ function Home(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 230) + 1;
+        const id = Math.floor(randomValue * 243);
     
         return id;
     }
