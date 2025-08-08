@@ -152,7 +152,7 @@ function Quote(){
             )}
             
             <form className={styles.form}>
-                <AutoCompleteInput id="teste" suggestions={players.map(player => player.name)} inputValue={resposta} setInputValue={setResposta} submit={EnviaRes2}/>
+                <AutoCompleteInput id="teste"   suggestions={players.filter(player => player.id >= 0).map(player => player.name)} inputValue={resposta} setInputValue={setResposta} submit={EnviaRes2}/>
                 {/*<Input placeholder="Digite o Nome de um Jogador..." type="text" name="name" handleOnchange={(e)=>setResposta(e.target.value)}/>*/}
                 <SubmitButton onclick={EnviaRes}/>  
             </form>
