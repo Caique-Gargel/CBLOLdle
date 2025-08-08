@@ -81,6 +81,8 @@ function Lineup() {
       
       
       /*var id = falas[generateidPerDate()].player_id;*/
+      console.log(lineups[generateidPerDate()]);
+      
       setLineupDoDia(lineups[generateidPerDate()]);
       setTime(lineups[generateidPerDate()].time);
       setAno(lineups[generateidPerDate()].ano);
