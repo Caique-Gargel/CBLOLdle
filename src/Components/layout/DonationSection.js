@@ -55,7 +55,7 @@ function DonationSection({ modal, setModal }) {
             <hr />
             <div className={styles.DonationInfo}>
                 <p>Valor Arrecadado: <b className={styles.arrecadado}>R${total}</b></p>
-                <p>Meta para novos minigames/funcionalidades <b className={styles.arrecadado}>R$300,00</b></p>
+                
                 <p> Top 3 Doações: &ensp;&ensp;<b className={styles.primeiro}>1º {top1.donator_name} R${top1.value.toFixed(2)} </b>&ensp;&ensp;<b className={styles.segundo}>2º {top2.donator_name} R${top2.value.toFixed(2)}</b> &ensp;&ensp;<b className={styles.terceiro}>3º  {top3.donator_name} R${top3.value.toFixed(2)}</b> </p>
             </div>
             <hr />
