@@ -8,6 +8,7 @@ import AutoCompleteInput from "../Forms/AutoCompleteInput";
 import Result from "../layout/Result";
 import { useState, useEffect} from "react"
 import BotaoDica from "../layout/BotaoDica"; // Importar BotaoDica
+import AdsterraBanner from "../layout/AdsterraBanner";
 function Home(){
     const [players,setPlayers] = useState([])
     const [resposta,setResposta] = useState([])
@@ -135,10 +136,8 @@ function Home(){
         <div className={styles.home}>
             <img className={styles.logo} src={logo} alt="cbloldle"></img>
             <MenuModos modo="classic"/>
-            <script async="async" data-cfasync="false" src="//pl27675217.revenuecpmgate.com/7d1b2ae2bc294f70a0839626234c9448/invoke.js"></script>
-            <div id="container-7d1b2ae2bc294f70a0839626234c9448"></div>
             <Tutorial setOpen={setOpen} open={open} tipo="classic"/>
-            
+            <AdsterraBanner />
             <Bloco texto="Digite o nome de um pro-player que tenha jogado no CBLOL em algum momento e use as dicas para descobrir o jogador do dia! " titulo="Adivinhe o jogador do CBLOL de hoje!"/>
             <form className={styles.form}>
                 <AutoCompleteInput
