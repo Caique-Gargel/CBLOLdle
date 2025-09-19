@@ -138,6 +138,8 @@ function Home(){
             <Tutorial setOpen={setOpen} open={open} tipo="classic"/>
             
             <Bloco texto="Digite o nome de um pro-player que tenha jogado no CBLOL em algum momento e use as dicas para descobrir o jogador do dia! " titulo="Adivinhe o jogador do CBLOL de hoje!"/>
+            <script async="async" data-cfasync="false" src="//pl27675217.revenuecpmgate.com/7d1b2ae2bc294f70a0839626234c9448/invoke.js"></script>
+            <div id="container-7d1b2ae2bc294f70a0839626234c9448"></div>
             <form className={styles.form}>
                 <AutoCompleteInput
                     id="teste"
