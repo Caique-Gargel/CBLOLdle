@@ -7,17 +7,19 @@ import Quotes from './Components/pages/Quotes';
 import DateGame from './Components/pages/DateGame';
 import Lineup from './Components/pages/Lineup';
 import Donation from './Components/pages/Donation';
+import RedirectAdsTxt from './Components/pages/RedirectAdsTxt';
 function App() {
   return (
     <>
     <Router>
       <Container customclass="min-height">
       <Routes>
-        <Route  path="/" element={<Home />} > </Route>
-        <Route  path="/falas" element={<Quotes />} > </Route>
-        <Route  path="/date" element={<DateGame />} > </Route>
-        <Route  path="/lineup" element={<Lineup />} > </Route>
-        <Route  path="/donation" element={<Donation />} > </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/falas" element={<Quotes />} />
+        <Route path="/date" element={<DateGame />} />
+        <Route path="/lineup" element={<Lineup />} />
+        <Route path="/donation" element={<Donation />} />
+        <Route path="/ads.txt" element={<RedirectAdsTxt/>} />
       </Routes>
       </Container>
       <Footer/>
