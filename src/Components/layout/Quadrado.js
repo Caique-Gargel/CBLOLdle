@@ -65,7 +65,13 @@ function Quadrado({text,categorie,customClass,img,flagPrimeiro})
                     <div  className={`${styles.flipCardBack} ${styles[customClass]} `}>
                         {img 
                             ?<img src={m} alt={img} title={img}></img>
-                            :<p>{text}</p>
+                            :( 
+                                customClass=="parcial"?
+                                <p>idade não conhecida</p>:
+                                <p>{text}</p>
+                                      
+                            )
+                            
                         }
                     </div>
                 </div>

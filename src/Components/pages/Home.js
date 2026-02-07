@@ -8,6 +8,7 @@ import AutoCompleteInput from "../Forms/AutoCompleteInput";
 import Result from "../layout/Result";
 import { useState, useEffect} from "react"
 import BotaoDica from "../layout/BotaoDica"; // Importar BotaoDica
+import IdadeDesconhecida from "../layout/IdadeDesconhecida";
 function Home(){
     const [players,setPlayers] = useState([])
     const [resposta,setResposta] = useState([])
@@ -48,7 +49,7 @@ function Home(){
         {
             
             
-            setplayerDoDia(players[generateidPerDate()]);
+            setplayerDoDia(players[130/*generateidPerDate()*/]);
             if(localStorage.getItem("date")!=hoje)
             {
                
@@ -138,6 +139,8 @@ function Home(){
             <Tutorial setOpen={setOpen} open={open} tipo="classic"/>
             
             <Bloco texto="Digite o nome de um pro-player que tenha jogado no CBLOL em algum momento e use as dicas para descobrir o jogador do dia! " titulo="Adivinhe o jogador do CBLOL de hoje!"/>
+            <IdadeDesconhecida idade={playerDoDia.idade}/>
+    
             <form className={styles.form}>
                 <AutoCompleteInput
                     id="teste"
@@ -149,7 +152,8 @@ function Home(){
                 {/*<Input placeholder="Digite o Nome de um Jogador..." type="text" name="name" handleOnchange={(e)=>setResposta(e.target.value)}/>*/}
                 <SubmitButton onclick={EnviaRes}/>  
             </form>
-            <BotaoDica ListResposta={ListResposta} resposta={playerDoDia} /> {/* Adicionar BotaoDica */}
+            <BotaoDica ListResposta={ListResposta} resposta={playerDoDia} />
+            
             <div className={styles.downUp}>
             {
                 ListResposta.map((item)=>(
