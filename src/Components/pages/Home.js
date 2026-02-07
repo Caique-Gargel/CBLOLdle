@@ -49,7 +49,7 @@ function Home(){
         {
             
             
-            setplayerDoDia(players[130/*generateidPerDate()*/]);
+            setplayerDoDia(players[generateidPerDate()]);
             if(localStorage.getItem("date")!=hoje)
             {
                
@@ -96,7 +96,7 @@ function Home(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 243);
+        const id = Math.floor(randomValue * 255);
     
         return id;
     }
