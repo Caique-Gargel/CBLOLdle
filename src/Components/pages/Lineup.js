@@ -32,7 +32,7 @@ function Lineup() {
     
     // Gerar um número entre 1 e 37
     const randomValue = seededRandom(totalDays);
-    const id = Math.floor(randomValue * 57)   ;
+    const id = Math.floor(randomValue * 77)   ;
     
     return id;
   }
@@ -81,7 +81,7 @@ function Lineup() {
       
       
       /*var id = falas[generateidPerDate()].player_id;*/
-      console.log(lineups[generateidPerDate()]);
+      
       
       setLineupDoDia(lineups[generateidPerDate()]);
       setTime(lineups[generateidPerDate()].time);

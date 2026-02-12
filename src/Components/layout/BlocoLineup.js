@@ -206,6 +206,8 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
         
         if(respostaSup!=null && respostaSup!="" && lineupDoDia!=null && lineupDoDia.SUP!=null)
         {
+            console.log("Do dia:"+lineupDoDia.SUP+" Resposta:"+respostaSup.id);
+            
             setInputSup(JSON.parse(localStorage.getItem("RespostaSup")).name);
             setImgSup(loadImg(respostaSup.name));
             if(lineupDoDia.SUP==respostaSup.id){
@@ -233,7 +235,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
     {
         
         var playerAdivinhado = players.find(
-            ({ name, Position }) => name.toLowerCase() === res.toLowerCase() && Position === tipo
+            ({ name }) => name.toLowerCase() === res.toLowerCase() 
         );
         
         if(playerAdivinhado!=null)
@@ -280,7 +282,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
                     <div className={styles.role}>
                         <img className={styles.roleIcon} src={topIcon} alt="Top Icon"/>
                         <img className={`${styles.profileIcon} ${styles[customClassTop]}`} src={imgTop} alt="Profile"/>
-                        <AutoCompleteRoles id="TOP" suggestions={players.filter(player => player.Position === "TOP").map(player => player.name)} inputValue={inputTop} submit={EnviaRes} setInputValue={setInputTop}/>
+                        <AutoCompleteRoles id="TOP" suggestions={players.filter(player => player.Position.includes("TOP")).map(player => player.name)} inputValue={inputTop} submit={EnviaRes} setInputValue={setInputTop}/>
                         {customClassTop!="" &&(
                             <div className={`${styles.containerRes} ${styles[customClassTop]}`} >
                                 {customClassTop==="errado" ? (
@@ -295,7 +297,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
                     <div className={styles.role}>
                         <img className={styles.roleIcon} src={jungleIcon} alt="JG Icon"/>
                         <img className={`${styles.profileIcon} ${styles[customClassJG]}`} src={imgJungle} alt="Profile"/>
-                        <AutoCompleteRoles id="JUNGLE" suggestions={players.filter(player => player.Position === "JUNGLE").map(player => player.name)} inputValue={inputJungle} submit={EnviaRes} setInputValue={setInputJungle}/>
+                        <AutoCompleteRoles id="JUNGLE" suggestions={players.filter(player => player.Position.includes("JUNGLE")).map(player => player.name)} inputValue={inputJungle} submit={EnviaRes} setInputValue={setInputJungle}/>
                         {customClassJG!="" &&(
                             <div className={`${styles.containerRes} ${styles[customClassJG]}`} >
                                 {customClassJG==="errado" ? (
@@ -309,7 +311,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
                     <div className={styles.role}>
                         <img className={styles.roleIcon} src={MidIcon} alt="Mid Icon"/>
                         <img className={`${styles.profileIcon} ${styles[customClassMid]}`} src={imgMid} alt="Profile"/>
-                        <AutoCompleteRoles id="MID" suggestions={players.filter(player => player.Position === "MID").map(player => player.name)} inputValue={inputMid} submit={EnviaRes} setInputValue={setInputMid}/>
+                        <AutoCompleteRoles id="MID" suggestions={players.filter(player =>player.Position.includes("MID") ).map(player => player.name)} inputValue={inputMid} submit={EnviaRes} setInputValue={setInputMid}/>
                         {customClassMid!="" &&(
                             <div className={`${styles.containerRes} ${styles[customClassMid]}`} >
                                 {customClassMid==="errado" ? (
@@ -323,7 +325,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
                     <div className={styles.role}>
                         <img className={styles.roleIcon} src={adcIcon} alt="ADC Icon"/>
                         <img className={`${styles.profileIcon} ${styles[customClassADC]}`} src={imgADC} alt="Profile"/>
-                        <AutoCompleteRoles id="ADC" suggestions={players.filter(player => player.Position === "ADC").map(player => player.name)} inputValue={inputADC} submit={EnviaRes} setInputValue={setInputADC}/>
+                        <AutoCompleteRoles id="ADC" suggestions={players.filter(player => player.Position.includes("ADC")).map(player => player.name)} inputValue={inputADC} submit={EnviaRes} setInputValue={setInputADC}/>
                         {customClassADC!="" &&(
                             <div className={`${styles.containerRes} ${styles[customClassADC]}`} >
                                 {customClassADC==="errado" ? (
@@ -337,7 +339,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
                     <div className={styles.role}>
                         <img className={styles.roleIcon} src={supIcon} alt="SUP Icon"/>
                         <img className={`${styles.profileIcon} ${styles[customClassSUP]}`} src={imgSup} alt="Profile"/>
-                        <AutoCompleteRoles id="SUP" suggestions={players.filter(player => player.Position === "SUP").map(player => player.name)} inputValue={inputSup} submit={EnviaRes} setInputValue={setInputSup}/>
+                        <AutoCompleteRoles id="SUP" suggestions={players.filter(player => player.Position.includes("SUP")).map(player => player.name)} inputValue={inputSup} submit={EnviaRes} setInputValue={setInputSup}/>
                         {customClassSUP!="" &&(
                             <div className={`${styles.containerRes} ${styles[customClassSUP]}`} >
                                 {customClassSUP==="errado" ? (

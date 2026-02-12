@@ -35,10 +35,16 @@ function Result({res,diario,primeiro})
         classSituacao="errado"
     //-----------------------------------------------------------
 
-    if(res.Position===diario.Position)
+    if(res.Position[0]===diario.Position[0])
         classPosition="certo"
-    else
-        classPosition="errado"
+   else
+    {
+        classPosition="errado" 
+        for (var i = 0; i < diario.Position.length; i++) {
+           if(res.Position[0]===diario.Position[i])
+                classPosition="parcial"
+        }
+    }
      //-----------------------------------------------------------
 
     if(res.idade===diario.idade)
@@ -81,7 +87,7 @@ function Result({res,diario,primeiro})
             <Quadrado text={res.name} categorie="Jogador" img={res.name} flagPrimeiro={flagPrimeiro} />
             <Quadrado text={res.Org[0]} categorie="Time" customClass={classTime} img="" flagPrimeiro={flagPrimeiro} />
             <Quadrado text={res.Titulos} categorie="Títulos" customClass={classTitulo} img="" flagPrimeiro={flagPrimeiro}/>
-            <Quadrado text={res.Position} categorie="Posição" customClass={classPosition} img="" flagPrimeiro={flagPrimeiro}/>
+            <Quadrado text={res.Position[0]} categorie="Posição" customClass={classPosition} img="" flagPrimeiro={flagPrimeiro}/>
             <Quadrado text={res.idade} categorie="Idade" customClass={classIdade} img="" flagPrimeiro={flagPrimeiro}/>
             <Quadrado text={res.Current} categorie="Situação"  customClass={classSituacao} img="" flagPrimeiro={flagPrimeiro}/>
             <Quadrado text={res.nacionalidade} categorie="Origem"  customClass={classNacionalidade} img="" flagPrimeiro={flagPrimeiro}/>

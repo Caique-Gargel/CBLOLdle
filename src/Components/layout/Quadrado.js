@@ -66,8 +66,7 @@ function Quadrado({text,categorie,customClass,img,flagPrimeiro})
                         {img 
                             ?<img src={m} alt={img} title={img}></img>
                             :( 
-                                customClass=="parcial"?
-                                <p>idade não conhecida</p>:
+                                
                                 <p>{text}</p>
                                       
                             )
