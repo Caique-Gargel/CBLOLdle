@@ -206,7 +206,7 @@ function BlocoLineup({players,titulo,lineupDoDia,setAcertou})
         
         if(respostaSup!=null && respostaSup!="" && lineupDoDia!=null && lineupDoDia.SUP!=null)
         {
-            console.log("Do dia:"+lineupDoDia.SUP+" Resposta:"+respostaSup.id);
+ 
             
             setInputSup(JSON.parse(localStorage.getItem("RespostaSup")).name);
             setImgSup(loadImg(respostaSup.name));
