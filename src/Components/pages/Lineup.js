@@ -32,7 +32,7 @@ function Lineup() {
     
     // Gerar um número entre 1 e 37
     const randomValue = seededRandom(totalDays);
-    const id = Math.floor(randomValue * 77)   ;
+    const id = Math.floor(randomValue * 112);
     
     return id;
   }
