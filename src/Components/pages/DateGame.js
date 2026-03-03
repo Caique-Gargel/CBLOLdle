@@ -61,7 +61,7 @@ function DateGame(){
                
                 setFinais(data)
                 window.scrollTo({
-                top: document.body.scrollHeight,
+                top: document.body.scrollHeight*0.21,
                 behavior: "smooth",
                 });
                 

@@ -2,14 +2,15 @@ import styles from "./Bloco.module.css"
 import { useRef, useEffect, useState } from "react"
 import Select from "../Forms/Select"
 import Button from "../Forms/Button"
-
+import ImagemPixelada from "./ImagemPixelada.js"
 import imgA from '../../Icons/ModoA.png'
 import imgB from '../../Icons/ModoB.png'
 import imgC from '../../Icons/ModoC.png'
 import imgD from '../../Icons/ModoD.png'
 import imgE from '../../Icons/ModoE.png'
+import imgF from '../../Icons/ModoF.png'
 
-function Bloco({ texto, titulo, customClass, img, perguntaBonus }) {
+function Bloco({ texto, titulo, customClass, img, perguntaBonus,tentativas }) {
     const myRef = useRef(null)
     const [selectedOptionCampeao, setSelectedOptionCampeao] = useState(1);
     const [selectedOptionResultado, setSelectedOptionResultado] = useState(1);
@@ -38,11 +39,8 @@ function Bloco({ texto, titulo, customClass, img, perguntaBonus }) {
             setRandOrderedTeams(shuffledTeams);
         }
     }, [perguntaBonus]);
-    /*useEffect(() => {
-           if (customClass === "correct" && myRef.current) {
-               myRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-           }
-       }, [customClass]); // Executa o scroll apenas quando `primeiro` ou `res` mudarem*/
+    
+   // Executa o scroll apenas quando `primeiro` ou `res` mudarem*/
 
 
 
@@ -61,8 +59,11 @@ function Bloco({ texto, titulo, customClass, img, perguntaBonus }) {
     }
     function scrollToBottom() {
        /* window.scrollTo({top: 0,behavior: 'smooth'})*/
+        const myDiv = document.getElementById('carrosel');
+        const height = myDiv.getBoundingClientRect().height;
+        
         window.scrollTo({
-            top: document.body.scrollHeight,
+            top: document.body.scrollHeight * 0.47 ,
             behavior: "smooth",
         });
     }
@@ -70,7 +71,12 @@ function Bloco({ texto, titulo, customClass, img, perguntaBonus }) {
         <div className={styles.containerBloco}>
             <div className={`${styles.bloco} ${styles[customClass]}`}>
                 <h2>{titulo}</h2><br />
-                {customClass === "date" && (
+                {customClass === "silhouette"  && (
+                    <ImagemPixelada img={img.src} width={img.width} height={img.height} fatorReducao={tentativas}/>
+                   // <img src={img.src} />
+                )}
+                {customClass === "date"  && (
+                    //<ImagemPixelada img={img} />
                     <img src={img} />
                 )}
                 <p>{texto}</p>
@@ -120,17 +126,18 @@ function Bloco({ texto, titulo, customClass, img, perguntaBonus }) {
 
                             </div>
                         ) : (
-                            <img src={img} />
+                            <img className={styles.imgSucesso} src={img} />
                         )
 
                         }
-
+                        <p>faça uma doação para manter o projeto vivo🥺 </p>
+                        <a href="/donation"><img className={styles.imgRedirect} src={imgF} /></a>
                         <p>Aproveite para jogar os outros modos:</p>
                         <a href="/" to="Classico"><img className={styles.imgRedirect} src={imgA} /></a>
                         <a href="/falas"><img className={styles.imgRedirect} src={imgB} /></a>
                         <a href="/date"><img className={styles.imgRedirect} src={imgC} /></a>
                         <a href="/lineup"><img className={styles.imgRedirect} src={imgD} /></a>
-                        <a href="/donation"><img className={styles.imgRedirect} src={imgE} /></a>
+                        <a href="/silhouette"><img className={styles.imgRedirect} src={imgE} /></a>
                     </div>
                 )}
 

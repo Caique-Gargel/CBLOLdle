@@ -9,20 +9,32 @@ const AutoCompleteRoles = ({suggestions,inputValue,setInputValue,submit,id}) => 
   const [showSuggestions, setShowSuggestions] = useState(false);
   const ulRef = useRef(null);
   const handleChange = (e) => {
-   
-    const value = e.target.value;
-    setInputValue(value);
-    
-    if (value.length > 0) {
-      const filtered = suggestions.filter((item) =>
+  const value = e.target.value;
+  setInputValue(value);
+  
+  if (value.length > 0) {
+    const filtered = suggestions
+      .filter((item) =>
         item.toLowerCase().includes(value.toLowerCase())
-      );
-      setFilteredSuggestions(filtered);
-      setShowSuggestions(true);
-    } else {
-      setShowSuggestions(false);
-    }
-  };
+      )
+      .sort((a, b) => {
+        const aStarts = a.toLowerCase().startsWith(value.toLowerCase());
+        const bStarts = b.toLowerCase().startsWith(value.toLowerCase());
+        
+        // Se um começa e o outro não, quem começa vem primeiro
+        if (aStarts && !bStarts) return -1;
+        if (!aStarts && bStarts) return 1;
+        
+        // Se ambos começam ou ambos não começam, ordena alfabeticamente
+        return a.localeCompare(b);
+      });
+    
+    setFilteredSuggestions(filtered);
+    setShowSuggestions(true);
+  } else {
+    setShowSuggestions(false);
+  }
+};
 
   const handleClick = (suggestion) => {
     setInputValue(suggestion);

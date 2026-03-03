@@ -63,7 +63,7 @@
         background-image: url(../../Rope.png);
         background-repeat: no-repeat;
         background-position: 50%;
-        background-size: 83.5% 13px;
+        background-size: 99.5% 13px;
         z-index: 0;
     }
     @media (max-width:450px){
@@ -81,6 +81,14 @@
         .ropeBackGround{
            
             background-size: 78.5% 13px;
+            
+        }
+    }
+     @media (min-width: 2560px){
+        
+        .ropeBackGround{
+           
+            background-size: 60% 13px;
             
         }
     }

@@ -50,7 +50,7 @@ function Lineup() {
         
       setPlayers(data)
       window.scrollTo({
-      top: document.body.scrollHeight,
+      top: document.body.scrollHeight*0.165,
       behavior: "smooth",
       });
 

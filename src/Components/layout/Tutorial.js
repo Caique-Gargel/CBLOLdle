@@ -4,6 +4,7 @@ import Modal from "./Modal";
 import ModalQuotes from "./ModalQuotes";
 import ModalDate from "./ModalDate";
 import ModalLineup from "./ModalLineup";
+import ModalSilhouette from "./ModalSilhouette";
 function Tutorial({open,setOpen,tipo})
 {
    
@@ -23,7 +24,9 @@ function Tutorial({open,setOpen,tipo})
             {tipo==="lineup" &&(
                 <ModalLineup isOpen={open} setOpen={setOpen}/>
             )}
-            
+             {tipo==="silhouette" &&(
+                <ModalSilhouette isOpen={open} setOpen={setOpen}/>
+            )}
             
         </div>
     )

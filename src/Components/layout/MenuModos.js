@@ -10,16 +10,18 @@ import DonationWhite from '../../Donation_white.png';
 import Donation from '../../Donation_gray.png';
 import Lineup from '../../Lineup_gray.png';
 import LineupWhite from '../../Lineup_white.png';
-
+import SilhouetteWhite from '../../Silhouette_white.png';
+import SilhouetteImg from '../../Silhouette_gray.png';
 function MenuModos({modo}){
-    var img1,img2,img3,img4,img5 = null;
-    var customclass1,customclass2,customclass3,customclass4, customclass5 = null;
+    var img1,img2,img3,img4,img5,img6 = null;
+    var customclass1,customclass2,customclass3,customclass4, customclass5, customclass6 = null;
     if(modo === "classic"){
         img1 = ClassicWhite;
         img2 = QuotesImg;
         img3 = DateImg;
         img4 = Lineup;
         img5 = Donation;
+        img6 = SilhouetteImg;
         customclass1 ="active"
     }
     if(modo === "quotes"){
@@ -29,6 +31,7 @@ function MenuModos({modo}){
         img3 = DateImg;
         img4 = Lineup;
         img5 = Donation;
+        img6 = SilhouetteImg;
         customclass2 ="active"
     }
     if(modo === "date"){
@@ -38,6 +41,7 @@ function MenuModos({modo}){
         img3 = DateWhite;
         img4 = Lineup;
         img5 = Donation;
+        img6 = SilhouetteImg;
         customclass3 ="active"
     }
     if(modo === "lineup"){
@@ -46,6 +50,7 @@ function MenuModos({modo}){
         img3 = DateImg;
         img4 = LineupWhite;
         img5 = Donation;
+        img6 = SilhouetteImg;
         customclass4 ="active"
     }
     if(modo === "donation"){
@@ -54,7 +59,17 @@ function MenuModos({modo}){
         img3 = DateImg;
         img4 = Lineup;
         img5 = DonationWhite;
+        img6 = SilhouetteImg;
         customclass5 ="active"
+    }
+    if(modo === "silhouette"){
+        img1 = ClassicImg;
+        img2 = QuotesImg;
+        img3 = DateImg;
+        img4 = Lineup;
+        img5 = Donation;
+        img6 = SilhouetteWhite;
+        customclass6 ="active"
     }
     return(
         
@@ -67,10 +82,12 @@ function MenuModos({modo}){
                     <div className={styles.ropeBackGround}></div>
                     <ul className={styles.social_list}>
                         <li><Link to="/"><img title="Modo Classico" className={` ${styles[customclass1]} `} src={img1}></img></Link></li>
+                        <li><Link to="/silhouette" ><img title="Adivinhe a Silhueta!" className={` ${styles[customclass6]} `} src={img6}></img></Link></li>
+                        <li><Link to="/lineup" ><img title="Qual é a Lineup!" className={` ${styles[customclass4]} `} src={img4}></img></Link></li>
                         <li><Link to="/falas"><img title="Quem disse isso?"  className={` ${styles[customclass2]} `} src={img2}></img></Link></li>
                         <li><Link to="/date" ><img title="Que final foi essa?" className={` ${styles[customclass3]} `} src={img3}></img></Link></li>
-                        <li><Link to="/lineup" ><img title="Qual é a Lineup!" className={` ${styles[customclass4]} `} src={img4}></img></Link></li>
                         <li><Link to="/donation" ><img title="APOIE!" className={` ${styles[customclass5]} `} src={img5}></img></Link></li>
+                       
                     </ul>
                 </div>
             </div>

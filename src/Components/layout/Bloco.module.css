@@ -20,6 +20,28 @@ margin-bottom: 2%;
 .date{
     width: 100%;
 }
+.silhouette{
+    width: 60%;
+    overflow: hidden;
+}
+.silhouette p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family:  Helvetica, sans-serif;
+}
+.imgSucesso{
+    width: 40%;
+    height: auto;
+}
+.silhouette img{
+    width: 85%;
+    height: 85%;
+    margin-bottom: 1.5em;
+    object-fit: cover;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
 .date p{
     text-align: center;
     color: white;
