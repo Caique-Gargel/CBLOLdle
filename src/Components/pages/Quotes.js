@@ -106,7 +106,7 @@ function Quote(){
         
         // Gerar um número entre 1 e 45
         const randomValue = seededRandom(totalDays);
-        const id = Math.floor(randomValue * 40) ;
+        const id = Math.floor(randomValue * 48) ;
     
         return id;
     }
