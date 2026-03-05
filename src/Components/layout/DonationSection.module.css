@@ -91,3 +91,20 @@
     
     border: 2px solid white;
 }
+@media (max-width:450px) {
+    
+    .descriptionSection{
+        width: 100%;
+    }
+     .donationSection p{
+         font-size: 1rem;
+     }
+     .DonationInfo{
+         flex-direction: column;
+     }
+     .btn {
+        padding: 0.8em 2em;
+        font-size: 1rem;
+    }
+   
+}  

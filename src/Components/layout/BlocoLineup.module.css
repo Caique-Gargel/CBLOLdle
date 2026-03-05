@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 2px;
     margin-top: 0.45em;
@@ -75,29 +75,30 @@
   background-color: #e35454;
 }
 
-.containerBloco{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    
-}
+
 
 
 
 @media (max-width:450px){
     .bloco{
         width: 100%;
-        padding: 0px;
-        margin: 0;
-        padding: 1em;
+        
         margin-bottom: 1em;
     }
     .correct{
         width: 100%;
     }
-    .containerBloco{
+    .containerRes{
         width: 100%;
+        text-align: center;
+    }
+    .containerRole{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .role{
+        margin:  1em 0;
+        
     }
 }

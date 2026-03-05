@@ -125,4 +125,7 @@ margin-bottom: 2%;
     .containerBloco{
         width: 100%;
     }
+    .RedirectContainer a img{
+        width: 100px;
+    }
 }

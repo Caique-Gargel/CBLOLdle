@@ -75,3 +75,8 @@
 .active {
   background: #333;
 }
+@media (max-width:450px) {
+    .carousel{
+        display: none;
+    }
+}

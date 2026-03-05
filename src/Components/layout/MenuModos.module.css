@@ -74,13 +74,32 @@
             padding: 1em;
             margin-bottom: 1em;
         }
-       
+        .menu{
+            max-width: 100%;
+        }
+        .containerMenu{
+            max-width: 100%;
+        }
+         
+        
+        .social_list {
+            display: flex ;
+            
+        }
+         .social_list li{
+            margin: 0 0.5em;
+            z-index: 1;
+        }
+        .social_list img{
+            width: 40px;
+        }
         .containerBloco{
             width: 100%;
         }
+        
         .ropeBackGround{
            
-            background-size: 78.5% 13px;
+            background-size: 100% 13px;
             
         }
     }

@@ -15,3 +15,11 @@
  padding: 0px 80px 0px 80px;
  margin: 2% auto;
 }
+@media (max-width:450px) {
+    .home{
+        width: 100%;
+    }
+    .logo{
+        max-width: 98%;
+    }
+}   

@@ -33,5 +33,18 @@
     width: 100%;
     
 }
+@media (max-width:450px) {
+    .home{
+        width: 100%;
+    }
+    .logo{
+        max-width: 98%;
+    }
+    .home form{
+        height: 20%;
+        margin: auto 0;
+        margin-bottom: 5em;
+    }
+}
     
   
