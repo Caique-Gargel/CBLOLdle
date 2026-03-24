@@ -6,6 +6,7 @@ import MenuModos from "../layout/MenuModos";
 import SubmitButton from "../Forms/SubmitButton";
 import AutoCompleteInput from "../Forms/AutoCompleteInput";
 import Result from "../layout/Result";
+import environment from "../../config";
 import { useState, useEffect} from "react"
 import BotaoDica from "../layout/BotaoDica"; // Importar BotaoDica
 import IdadeDesconhecida from "../layout/IdadeDesconhecida";
@@ -28,7 +29,7 @@ function Home(){
    },[acertou])*/
     
     useEffect(()=>{
-        fetch('https://api-storage-tiaw-one.vercel.app/players',{
+        fetch(`${environment.DATA_API_URL}/players`,{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json',

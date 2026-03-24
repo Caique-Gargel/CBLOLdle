@@ -9,6 +9,7 @@ import AutoCompleteInput from "../Forms/AutoCompleteInput";
 import { useState, useEffect} from "react"
 import BotaoDica from "../layout/BotaoDica"; // Importar BotaoDica
 import ResultFala from "../layout/ResultFala";
+import environment from "../../config";
 function Quote(){
     const [players,setPlayers] = useState([])
     const [falas,setFalas] = useState([])
@@ -31,7 +32,7 @@ function Quote(){
    },[acertou])*/
     
     useEffect(()=>{
-        fetch('https://api-storage-tiaw-one.vercel.app/players',{
+        fetch(`${environment.DATA_API_URL}/players`,{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json',
@@ -44,7 +45,7 @@ function Quote(){
             
         })
         .catch((err)=>console.log(err))
-        fetch('https://api-storage-tiaw-one.vercel.app/falas',{
+        fetch(`${environment.DATA_API_URL}/falas`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
