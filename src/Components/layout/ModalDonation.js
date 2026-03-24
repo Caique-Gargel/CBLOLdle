@@ -1,6 +1,7 @@
 import Input from "../Forms/Input";
 import styles from "./ModalDonation.module.css"
 import imgLoading from '../../Icons/Loading2.gif'
+import environment from "../../config";
 import { useState, useEffect } from "react";
 import imgGSTV from '../../Icons/GSTV.gif'
 import imgLoadingBar from '../../Icons/LoadingBar.gif'
@@ -18,7 +19,7 @@ function ModalDonation({ isOpen, setOpen }) {
 
         if (!pagamentoConfirmado && donation && donation.id) {
             const interval = setInterval(() => {
-                fetch(`https://cbloldle-backend.vercel.app/donations/${donation.id}`, {
+                fetch(`${environment.BACKEND_API_URL}/donations/${donation.id}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -116,7 +117,7 @@ function ModalDonation({ isOpen, setOpen }) {
             }
             const valorFloat = parseFloat(valorInput);
             setIsLoading(true);
-            fetch('https://cbloldle-backend.vercel.app/donations', {
+            fetch(`${environment.BACKEND_API_URL}/donations`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

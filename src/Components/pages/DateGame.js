@@ -2,6 +2,7 @@ import logo from "../../5.png"
 import MenuModos from "../layout/MenuModos"
 import styles from "./DateGame.module.css"
 import Tutorial from "../layout/Tutorial"
+import environment from "../../config";
 import { useState, useEffect} from "react"
 import Bloco from "../layout/Bloco"
 import Select from "../Forms/Select"
@@ -51,7 +52,7 @@ function DateGame(){
     ]
     
         useEffect(()=>{
-            fetch('https://api-storage-tiaw-one.vercel.app/finais',{
+            fetch(`${environment.DATA_API_URL}/finais`,{
                     method:'GET',
                     headers:{
                         'Content-Type':'application/json',
