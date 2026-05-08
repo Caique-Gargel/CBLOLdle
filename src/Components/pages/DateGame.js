@@ -170,7 +170,7 @@ function DateGame(){
             <Tutorial setOpen={setOpen} open={open} tipo="date"/>
             { finalDoDia &&(
                 
-                <Bloco texto="Adivinhe o ano e o split da final através dos jogadores picks e times" titulo="Descubra a Final" customClass="date" img={carregaImg(finalDoDia.foto)} />
+                <Bloco texto="Adivinhe o ano e o split da final através dos jogadores picks e Times " titulo="Descubra a Final" customClass="date" img={carregaImg(finalDoDia.foto)} />
             )
             }
             
