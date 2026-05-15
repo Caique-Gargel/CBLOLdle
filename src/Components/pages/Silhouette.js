@@ -6,6 +6,7 @@ import MenuModos from "../layout/MenuModos";
 import SubmitButton from "../Forms/SubmitButton";
 import AutoCompleteInput from "../Forms/AutoCompleteInput";
 import imgcorrect from "../../parabens.gif"
+import environment from "../../config";
 import { useState, useEffect} from "react"
 
 import ResultFala from "../layout/ResultFala";
@@ -22,7 +23,7 @@ function Silhouette() {
     const inpu =document.querySelector("#teste");
     
      useEffect(()=>{
-        fetch('https://api-storage-tiaw-one.vercel.app/players',{
+        fetch(`${environment.DATA_API_URL}/players`,{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json',

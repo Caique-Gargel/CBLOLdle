@@ -2,6 +2,7 @@ import logo from "../../5.png"
 import styles from './Lineup.module.css';
 import MenuModos from "../layout/MenuModos";
 import Tutorial from "../layout/Tutorial";
+import environment from "../../config";
 import { useState, useEffect } from "react";
 import BlocoLineup from "../layout/BlocoLineup";
 import Bloco from "../layout/Bloco";
@@ -40,7 +41,7 @@ function Lineup() {
 
 /*carrega players-------------------------------------------------------------------*/
   useEffect(()=>{
-    fetch('https://api-storage-tiaw-one.vercel.app/players',{
+    fetch(`${environment.DATA_API_URL}/players`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -60,7 +61,7 @@ function Lineup() {
 
   /*carrega lineups-------------------------------------------------------------------*/
   useEffect(()=>{
-    fetch('https://api-storage-tiaw-one.vercel.app/lineups',{
+    fetch(`${environment.DATA_API_URL}/lineups`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',

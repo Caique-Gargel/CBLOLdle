@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import environment from "../../config";
 import DonationBlock from "./DonationBlock";
 import styles from "./DonationSection.module.css"
 function DonationSection({ modal, setModal }) {
@@ -9,7 +10,7 @@ function DonationSection({ modal, setModal }) {
     const [top2, setTop2] = useState(initialDonation);
     const [top3, setTop3] = useState(initialDonation);
     useEffect(() => {
-        fetch('https://cbloldle-backend.vercel.app/donations', {
+        fetch(`${environment.BACKEND_API_URL}/donations`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
